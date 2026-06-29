@@ -47,7 +47,7 @@ const Sidebar = () => {
 
     <div className="d-flex justify-content-evenly align-items-center mt-3">
         <a href="" className='fs-4 logo'><i className="bi bi-github"></i></a>
-        <a href="" className='fs-4 logo'><i className="bi bi-google"></i></a>
+        <a href="mailto:rishisprogramming@gmail.com" className='fs-4 logo'><i className="bi bi-envelope"></i></a>
         <a href="" className='fs-4 logo'><i className="bi bi-globe"></i></a>
     </div>
     </Col>
