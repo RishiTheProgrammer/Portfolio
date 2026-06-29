@@ -24,7 +24,7 @@ const Sidebar = () => {
 
     <Col lg={2} className="sidebar py-5 d-lg-block d-none border-end border-3 border-secondary">
         <div className="text-center">
-        <img src="https://picsum.photos/150" className="rounded-circle border-2 border-primary border d-xl-inline d-none"/>
+        <img src="src/assets/Logo.png" className="rounded-circle border-2 border-primary border d-xl-inline d-none" height={150} width={150}/>
         <h2 className='display-6 fw-bolder mt-xl-3 '>Rishi</h2>
         </div>
         <ul className="nav nav-pills flex-column">
