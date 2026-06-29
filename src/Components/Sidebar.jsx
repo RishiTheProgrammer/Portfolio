@@ -2,7 +2,7 @@ import { Col } from 'react-bootstrap'
 import gsap from 'gsap'
 import "@gsap/react"
 import { useGSAP } from '@gsap/react'
-import logo from 'src/assets/Logo.png'
+import logo from '../assets/Logo.png'
 
 const Sidebar = () => {
     const tl = gsap.timeline();
