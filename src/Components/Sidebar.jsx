@@ -13,7 +13,7 @@ const Sidebar = () => {
         stagger: .5,
         duration: 1
       })
-      tl.from(".logo", {
+      tl.from(".logoBrand", {
         opacity: 0,
         y: 20,
         stagger: .5,
@@ -47,9 +47,15 @@ const Sidebar = () => {
 </ul>
 
     <div className="d-flex justify-content-evenly align-items-center mt-3">
-        <a href="" className='fs-4 logo'><i className="bi bi-github"></i></a>
-        <a href="mailto:rishisprogramming@gmail.com" className='fs-4 logo'><i className="bi bi-envelope"></i></a>
-        <a href="" className='fs-4 logo'><i className="bi bi-globe"></i></a>
+        <a href="" className='fs-4 logoBrand'>
+          <i className="bi bi-github"></i>
+          </a>
+        <a href="mailto:rishisprogramming@gmail.com" className='fs-4 logoBrand'>
+          <i className="bi bi-envelope"></i>
+          </a>
+        <a href="" className='fs-4 logoBrand'>
+          <i className="bi bi-globe"></i>
+          </a>
     </div>
     </Col>
   )
