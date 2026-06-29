@@ -1,10 +1,32 @@
 import { Col } from 'react-bootstrap'
+import gsap from 'gsap'
+import "@gsap/react"
+import { useGSAP } from '@gsap/react'
 
 const Sidebar = () => {
+    const tl = gsap.timeline();
+    useGSAP(()=>{
+      tl.from(".nav-link",{
+        opacity: 0,
+        x: 20,
+        stagger: .5,
+        duration: 1
+      })
+      tl.from(".logo", {
+        opacity: 0,
+        y: 20,
+        stagger: .5,
+        duration: 1
+      })
+    })
   return (
-    <Col lg={2} className="sidebar py-2 d-lg-block d-none">
-        <img src="https://picsum.photos/150" className="rounded-circle border-2 border-primary border" />
-        <h2 className='text-center display-6 fw-bolder'>Rishi</h2>
+    
+
+    <Col lg={2} className="sidebar py-5 d-lg-block d-none border-end border-3 border-secondary">
+        <div className="text-center">
+        <img src="https://picsum.photos/150" className="rounded-circle border-2 border-primary border d-xl-inline d-none"/>
+        <h2 className='display-6 fw-bolder mt-xl-3 '>Rishi</h2>
+        </div>
         <ul className="nav nav-pills flex-column">
   <li className="nav-item">
     <a className="nav-link" href="#"><i className="bi bi-house me-2"></i> Home</a>
@@ -23,10 +45,10 @@ const Sidebar = () => {
     </li>
 </ul>
 
-    <div className="d-flex justify-content-between align-items-center mt-3">
-        <a href="" className='fs-4'><i className="bi bi-github"></i></a>
-        <a href="" className='fs-4'><i className="bi bi-google"></i></a>
-        <a href="" className='fs-4'>&#xF1F7;</a>
+    <div className="d-flex justify-content-evenly align-items-center mt-3">
+        <a href="" className='fs-4 logo'><i className="bi bi-github"></i></a>
+        <a href="" className='fs-4 logo'><i className="bi bi-google"></i></a>
+        <a href="" className='fs-4 logo'><i className="bi bi-globe"></i></a>
     </div>
     </Col>
   )
