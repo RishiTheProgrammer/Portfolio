@@ -50,27 +50,27 @@ const Sidebar = () => {
       </div>
       <ul className="nav nav-pills flex-column">
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#home">
             <i className="bi bi-house me-2"></i> Home
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#about">
             <i className="bi bi-person me-2"></i> About
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#skills">
             <i className="bi bi-puzzle me-2"></i> Skills
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#project">
             <i className="bi bi-folder me-2"></i> Projects
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#contact">
             <i className="bi bi-envelope me-2"></i> Contact
           </a>
         </li>
