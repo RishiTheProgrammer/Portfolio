@@ -24,15 +24,15 @@ const CustomNavbar = ()=> {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
             <Nav.Link href="#home"><i className="bi bi-house"></i> Home</Nav.Link>
-            <Nav.Link href="#link"><i className="bi bi-person"></i> About</Nav.Link>
-            <Nav.Link href="#link"><i className="bi bi-puzzle"></i> Skills</Nav.Link>
-            <Nav.Link href="#link"><i className="bi bi-folder"></i> Projects</Nav.Link>
+            <Nav.Link href="#about"><i className="bi bi-person"></i> About</Nav.Link>
+            <Nav.Link href="#skills"><i className="bi bi-puzzle"></i> Skills</Nav.Link>
+            <Nav.Link href="#projects"><i className="bi bi-folder"></i> Projects</Nav.Link>
             <NavDropdown title="Conatct" id="basic-nav-dropdown" className="">
-              <NavDropdown.Item href="#action/3.1" className='w-100 d-flex align-items-center justify-content-between'><i className="bi bi-github fs-4"></i> GitHub</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className='w-100 d-flex align-items-center justify-content-between'>
+              <NavDropdown.Item href="https://github.com/RishiTheProgrammer/Portfolio" target="_blank" className='w-100 d-flex align-items-center justify-content-between'><i className="bi bi-github fs-4"></i> GitHub</NavDropdown.Item>
+              <NavDropdown.Item href="mailto:rishisprogramming@gmail.com" target="_blank" className='w-100 d-flex align-items-center justify-content-between'>
                 <i className="bi bi-envelope fs-4"></i> Gmail
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className='w-100 d-flex align-items-center justify-content-between'><i className="bi bi-globe fs-4"></i> Rishi</NavDropdown.Item>
+              <NavDropdown.Item href="https://rishitheprogrammer.vercel.app" target="_blank" className='w-100 d-flex align-items-center justify-content-between'><i className="bi bi-globe fs-4"></i> Rishi</NavDropdown.Item>
             </NavDropdown>
 
           </Nav>

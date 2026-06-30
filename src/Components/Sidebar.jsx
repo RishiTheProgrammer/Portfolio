@@ -16,8 +16,9 @@ const Sidebar = () => {
     tl.from(".nav-link", {
       opacity: 0,
       x: 20,
+      color: "white",
       stagger: 0.5,
-      duration: 1,
+      duration: .5,
     });
 
     tl.from(".logoBrand", {
@@ -76,13 +77,13 @@ const Sidebar = () => {
       </ul>
 
       <div className="d-flex justify-content-evenly align-items-center mt-3">
-        <a href="" className="fs-4 logoBrand">
-          <i className="bi bi-github"></i>
+        <a href="https://github.com/RishiTheProgrammer/Portfolio" target="_blank" className="fs-2 logoBrand text-decoration-none">
+          <i className="ri-github-fill"></i>
         </a>
-        <a href="mailto:rishisprogramming@gmail.com" className="fs-4 logoBrand">
+        <a href="mailto:rishisprogramming@gmail.com" target="_blank" className="fs-3 logoBrand">
           <i className="bi bi-envelope"></i>
         </a>
-        <a href="" className="fs-4 logoBrand">
+        <a href="https://rishitheprogrammer.vercel.app" className="fs-3 logoBrand">
           <i className="bi bi-globe"></i>
         </a>
       </div>
