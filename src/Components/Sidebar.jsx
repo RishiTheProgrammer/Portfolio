@@ -18,14 +18,12 @@ const Sidebar = () => {
       x: 20,
       color: "white",
       stagger: 0.5,
-      duration: .5,
     });
 
     tl.from(".logoBrand", {
       opacity: 0,
       y: 20,
       stagger: 0.5,
-      duration: 1,
     });
   });
   return (
