@@ -1,21 +1,10 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const CustomNavbar = ()=> {
-    const tl = gsap.timeline()
-    useGSAP(()=>{
-        tl.from("#Navbar",{
-            opacity: 0,
-            y: -50,
-            duration: 1
-        });
-    })
   return (
-    <Navbar expand="lg" className="bg-body-tertiary d-lg-none fixed-top" id="Navbar">
+    <Navbar expand="lg" className="bg-body-tertiary d-lg-none fixed-top" id="navbar">
       <Container>
         <Navbar.Brand href="#home" className='d-flex'>
            <h2>RISHI</h2>
@@ -27,14 +16,18 @@ const CustomNavbar = ()=> {
             <Nav.Link href="#about"><i className="bi bi-person"></i> About</Nav.Link>
             <Nav.Link href="#skills"><i className="bi bi-puzzle"></i> Skills</Nav.Link>
             <Nav.Link href="#projects"><i className="bi bi-folder"></i> Projects</Nav.Link>
-            <NavDropdown title="Conatct" id="basic-nav-dropdown" className="">
-              <NavDropdown.Item href="https://github.com/RishiTheProgrammer/Portfolio" target="_blank" className='w-100 d-flex align-items-center justify-content-between'><i className="bi bi-github fs-4"></i> GitHub</NavDropdown.Item>
-              <NavDropdown.Item href="mailto:rishisprogramming@gmail.com" target="_blank" className='w-100 d-flex align-items-center justify-content-between'>
-                <i className="bi bi-envelope fs-4"></i> Gmail
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://rishitheprogrammer.vercel.app" target="_blank" className='w-100 d-flex align-items-center justify-content-between'><i className="bi bi-globe fs-4"></i> Rishi</NavDropdown.Item>
-            </NavDropdown>
-
+            <Nav.Link href='#contact'><i className="bi bi-envelope"></i> Contact</Nav.Link>
+            <div className="d-flex justify-content-evenly align-items-center mt-3">
+        <a href="https://github.com/RishiTheProgrammer/Portfolio" target="_blank" className="fs-2 logoBrand text-decoration-none">
+          <i className="ri-github-fill"></i>
+        </a>
+        <a href="mailto:rishisprogramming@gmail.com" target="_blank" className="fs-3 logoBrand">
+          <i className="bi bi-envelope"></i>
+        </a>
+        <a href="https://rishitheprogrammer.vercel.app" className="fs-3 logoBrand">
+          <i className="bi bi-globe"></i>
+        </a>
+      </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
