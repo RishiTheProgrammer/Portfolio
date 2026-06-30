@@ -17,7 +17,8 @@ const CustomNavbar = ()=> {
   return (
     <Navbar expand="lg" className="bg-body-tertiary d-lg-none fixed-top" id="Navbar">
       <Container>
-        <Navbar.Brand href="#home" className='d-flex'><img src="src/Images/Logo.png" className="rounded-circle" height={40} width={40}/> 
+        <Navbar.Brand href="#home" className='d-flex'>
+           <h2>RISHI</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
