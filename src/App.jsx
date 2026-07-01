@@ -7,7 +7,7 @@ import CustomNavbar from "./Components/Navbar";
 
 const App = () => {
   return (
-    <Container fluid>
+    <Container fluid className="App">
       <CustomNavbar/>
       <Row>
           <Sidebar/>
