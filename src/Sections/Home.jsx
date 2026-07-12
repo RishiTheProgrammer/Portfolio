@@ -25,7 +25,7 @@ const Home = () => {
                     </Card>
                 </Col>
                 <Col md={6} className="text-lg-end text-center pe-xl-5">
-                    <img src="src/Images/Logo.png" alt="" className="img-fluid rounded-5" height={330} width={330}/>
+                    <img src="src/Images/logo.png" alt="" className="img-fluid rounded-5" height={330} width={330}/>
                 </Col>
             </Row>
         </Container>
