@@ -8,7 +8,7 @@ import logo from "../Images/logo.png";
 const Home = () => {
     useGSAP(() => {
         const tl = gsap.timeline();
-            tl.from("#home", { duration: 1, opacity: 0, y: -50 })
+            tl.from("#home", { duration: 0.5, opacity: 0, y: -50 })
     }, [])
   return (
     <section id="home">

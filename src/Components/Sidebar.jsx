@@ -5,11 +5,13 @@ import { useGSAP } from "@gsap/react";
 import logo from "../Images/logo.png";
 
 const Sidebar = () => {
-  const tl = gsap.timeline();
+  const tl = gsap.timeline({
+    timeScale: 2
+  });
   useGSAP(() => {
     tl.from(".logoName .a", {
       opacity: 0,
-      duration: 1,
+      duration: .5,
       stagger: .2,
     });
 
@@ -17,13 +19,13 @@ const Sidebar = () => {
       opacity: 0,
       x: 20,
       color: "white",
-      stagger: 0.5,
+      stagger: .2,
     });
 
     tl.from(".logoBrand", {
       opacity: 0,
       y: 20,
-      stagger: 0.5,
+      stagger: .2,
     });
   });
   return (
