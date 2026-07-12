@@ -3,6 +3,8 @@ import '@gsap/react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import "./Home.css"
+import logo from "../Images/logo.png";
+
 const Home = () => {
     useGSAP(() => {
         const tl = gsap.timeline();
@@ -25,7 +27,7 @@ const Home = () => {
                     </Card>
                 </Col>
                 <Col md={6} className="text-lg-end text-center pe-xl-5">
-                    <img src="src/Images/logo.png" alt="" className="img-fluid rounded-5" height={330} width={330}/>
+                    <img src={logo} alt="" className="img-fluid rounded-5" height={330} width={330}/>
                 </Col>
             </Row>
         </Container>
