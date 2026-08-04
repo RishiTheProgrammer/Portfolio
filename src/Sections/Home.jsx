@@ -3,7 +3,7 @@ import '@gsap/react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import "./Home.css"
-import logo from "../Images/logo.png";
+import logo from "../assets/logo.png";
 
 const Home = () => {
     useGSAP(() => {
