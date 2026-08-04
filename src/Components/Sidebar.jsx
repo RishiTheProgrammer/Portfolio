@@ -33,20 +33,21 @@ const Sidebar = () => {
       lg={2}
       className="sidebar py-5 d-lg-block d-none border-end border-3 border-secondary"
     >
-      <div className="text-center">
+      <div className="gap-3 d-flex text-center flex-column">
         <img
           src={logo}
-          className="rounded-circle border-2 border-primary border d-xl-inline d-none"
+          className="rounded-circle d-xl-inline d-none mx-auto"
           height={150}
           width={150}
+          style={{ boxShadow: "0px 0px 10px 2px rgba(255, 255, 255, 0.5)" }}
         />
-        <h2 className="display-6 fw-bolder mt-xl-3 logoName d-inline">
+        <h1 className="display-6 fw-bolder logoName d-inline">
           <span className="a">R</span>
           <span className="a">I</span>
           <span className="a">S</span>
           <span className="a">H</span>
           <span className="a">I</span>
-        </h2>
+        </h1>
       </div>
       <ul className="nav nav-pills flex-column">
         <li className="nav-item">
