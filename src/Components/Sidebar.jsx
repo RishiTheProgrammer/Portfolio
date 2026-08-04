@@ -1,8 +1,11 @@
 import { Col } from "react-bootstrap";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@gsap/react";
 import { useGSAP } from "@gsap/react";
 import logo from "../assets/logo.png";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Sidebar = () => {
   const tl = gsap.timeline({
