@@ -1,14 +1,15 @@
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '@gsap/react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import "./Home.css"
 import logo from "../assets/logo.png";
 
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 const Home = () => {
     useGSAP(() => {
-        const tl = gsap.timeline();
-            tl.from("#home", { duration: 0.5, opacity: 0, y: -50 })
     }, [])
   return (
     <section id="home">
