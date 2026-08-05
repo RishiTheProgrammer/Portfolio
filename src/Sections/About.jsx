@@ -1,10 +1,8 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '@gsap/react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
-import "./Home.css"
-import logo from "../assets/logo.png";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -19,17 +17,22 @@ const About = () => {
                 <Col md={6} className='text-start ps-xl-5'>
                     <Card className='bg-transparent border-0'>
                         <Card.Body>
-                            <Card.Title className='text-white display-4 fw-bold'>Hi, I'm <span className='text-primary name'>Rishi</span></Card.Title>
-                            <Card.Subtitle className='text-white fs-3 fw-semibold'>A Frontend Developer</Card.Subtitle>
-                            <Card.Text className='text-white mt-3'>I am a passionate frontend developer with a strong focus on creating visually appealing and user-friendly web applications. With expertise in HTML, CSS, JavaScript, and modern frontend frameworks, I strive to deliver seamless user experiences and innovative solutions.</Card.Text>
-                            <div className="d-flex align-items-center">
-                                <Button variant="primary">Learn More</Button>
-                            </div>
+                            <Card.Title className='text-white display-4 fs-3 fw-semibold'><i class="bi bi-person text-primary"></i> About me</Card.Title>
+                            <Card.Text className='text-white mt-3'>I'm an 8th class student and a passionate frontend developer. I love to build functional and beautiful webpages. I always learn new technologies and improve my past skills.</Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col md={6} className="text-lg-end text-center pe-xl-5">
-                    <img src={logo} alt="" className="img-fluid rounded-5" height={330} width={330}/>
+                    <Row>
+                        <Col>
+                            <Card className='bg-transparent border-2 border-primary'>
+                                <Card.Body>
+                                    <Card.Title className='text-white display-4 fs-3 fw-semibold'><i class="bi bi-code-slash text-primary"></i> Skills</Card.Title>
+                                    <Card.Text className='text-white mt-3'>HTML, CSS, JavaScript, ReactJS, Bootstrap, GitHub, Figma</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>
