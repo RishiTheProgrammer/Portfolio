@@ -4,7 +4,7 @@ import '@gsap/react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import "./Home.css"
-import logo from "../assets/logo.png";
+import hero from "../assets/HeroIMG.png"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -28,7 +28,7 @@ const Home = () => {
                     </Card>
                 </Col>
                 <Col md={6} className="text-lg-end text-center pe-xl-5">
-                    <img src={logo} alt="" className="img-fluid rounded-5" height={330} width={330}/>
+                    <img src={hero} alt="" className="img-fluid" style={{ mixBlendMode: "lighten", opcaiy: .95,  }}/>
                 </Col>
             </Row>
         </Container>
