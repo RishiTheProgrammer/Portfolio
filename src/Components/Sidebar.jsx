@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@gsap/react";
 import { useGSAP } from "@gsap/react";
 import logo from "../assets/logo.png";
+import { Link } from "react-scroll";
+import "../Components/Sidebar.css"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -21,7 +23,6 @@ const Sidebar = () => {
     tl.from(".nav-link", {
       opacity: 0,
       x: 20,
-      color: "white",
       stagger: .2,
     });
 
@@ -52,33 +53,24 @@ const Sidebar = () => {
           <span className="a">I</span>
         </h1>
       </div>
-      <ul className="nav nav-pills flex-column">
-        <li className="nav-item">
-          <a className="nav-link" href="#home">
-            <i className="bi bi-house me-2"></i> Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#about">
-            <i className="bi bi-person me-2"></i> About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#skills">
-            <i className="bi bi-puzzle me-2"></i> Skills
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#project">
-            <i className="bi bi-folder me-2"></i> Projects
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#contact">
-            <i className="bi bi-envelope me-2"></i> Contact
-          </a>
-        </li>
-      </ul>
+      
+      <div className="ms-3 d-flex flex-column gap-2">
+        <Link to="home" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-house-fill me-1"></i> Home
+        </Link>
+        <Link to="about" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-person-fill me-1"></i> About
+        </Link>
+        <Link to="skills" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-mortarboard-fill me-1"></i> Skills
+        </Link>
+        <Link to="projects" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-briefcase-fill me-1"></i> Projects
+        </Link>
+        <Link to="contact" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-telephone-fill me-1"></i> Contact
+        </Link>
+      </div>
 
       <div className="d-flex justify-content-evenly align-items-center mt-3">
         <a href="https://github.com/RishiTheProgrammer/Portfolio" target="_blank" className="fs-2 logoBrand text-decoration-none">
