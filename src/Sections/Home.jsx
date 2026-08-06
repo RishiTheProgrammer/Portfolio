@@ -5,6 +5,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import "./Home.css"
 import hero from "../assets/HeroIMG.png"
+import { Element, Link } from 'react-scroll'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -12,6 +13,7 @@ const Home = () => {
     useGSAP(() => {
     }, [])
   return (
+<Element name="home">
     <section id="home">
         <Container fluid>
             <Row className='min-vh-100 d-flex justify-content-center align-items-center'>
@@ -22,9 +24,9 @@ const Home = () => {
                             <Card.Subtitle className='text-white fs-3 fw-semibold'>A Frontend Developer</Card.Subtitle>
                             <Card.Text className='text-white mt-3'>I am a passionate frontend developer with a strong focus on creating visually appealing and user-friendly web applications. With expertise in HTML, CSS, JavaScript, and modern frontend frameworks, I strive to deliver seamless user experiences and innovative solutions.</Card.Text>
                             <div className="d-flex align-items-center">
-                                <a className='btn btn-primary' href="#about">
+                                <Link to="about" containerId="mainArea" className="btn btn-primary">
                                     Learn More
-                                </a>
+                                </Link>
                             </div>
                         </Card.Body>
                     </Card>
@@ -35,6 +37,7 @@ const Home = () => {
             </Row>
         </Container>
     </section>
+    </Element>
   )
 }
 

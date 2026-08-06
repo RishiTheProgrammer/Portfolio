@@ -3,6 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '@gsap/react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
+import { Element } from 'react-scroll'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -11,6 +12,8 @@ const About = () => {
         
     }, [])
   return (
+            <Element name="about">
+    
     <section id="about">
         <Container fluid>
             <Row className='min-vh-100 d-flex justify-content-center align-items-center'>
@@ -89,6 +92,7 @@ const About = () => {
             </Row>
         </Container>
     </section>
+    </Element>
   )
 }
 
