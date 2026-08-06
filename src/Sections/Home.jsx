@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '@gsap/react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import "./Home.css"
 import hero from "../assets/HeroIMG.png"
@@ -22,7 +22,9 @@ const Home = () => {
                             <Card.Subtitle className='text-white fs-3 fw-semibold'>A Frontend Developer</Card.Subtitle>
                             <Card.Text className='text-white mt-3'>I am a passionate frontend developer with a strong focus on creating visually appealing and user-friendly web applications. With expertise in HTML, CSS, JavaScript, and modern frontend frameworks, I strive to deliver seamless user experiences and innovative solutions.</Card.Text>
                             <div className="d-flex align-items-center">
-                                <Button variant="primary">Learn More</Button>
+                                <a className='btn btn-primary' href="#about">
+                                    Learn More
+                                </a>
                             </div>
                         </Card.Body>
                     </Card>
