@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-scroll";
 
 const CustomNavbar = () => {
   return (
@@ -16,21 +17,22 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#home">
-              <i className="bi bi-house"></i> Home
-            </Nav.Link>
-            <Nav.Link href="#about">
-              <i className="bi bi-person"></i> About
-            </Nav.Link>
-            <Nav.Link href="#skills">
-              <i className="bi bi-puzzle"></i> Skills
-            </Nav.Link>
-            <Nav.Link href="#projects">
-              <i className="bi bi-folder"></i> Projects
-            </Nav.Link>
-            <Nav.Link href="#contact">
-              <i className="bi bi-envelope"></i> Contact
-            </Nav.Link>
+            <Link to="home" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-house-fill me-1"></i> Home
+        </Link>
+        <Link to="about" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-person-fill me-1"></i> About
+        </Link>
+        <Link to="skills" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-mortarboard-fill me-1"></i> Skills
+        </Link>
+        <Link to="projects" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-briefcase-fill me-1"></i> Projects
+        </Link>
+        <Link to="contact" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
+          <i className="bi bi-telephone-fill me-1"></i> Contact
+        </Link>
+            
             <div className="d-flex justify-content-evenly align-items-center mt-3">
               <a
                 href="https://github.com/RishiTheProgrammer/Portfolio"
