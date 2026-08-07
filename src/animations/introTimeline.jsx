@@ -8,7 +8,8 @@ const introTimeline = () => {
       });
         tl.from(".sidebar", {
           x: "-100%",
-          duration: .5
+          duration: .5,
+          delay: 1
         });
     
         tl.from(".img-logo", {
