@@ -1,13 +1,9 @@
 import { Col } from 'react-bootstrap'
 import Home from '../Sections/Home.jsx'
 import About from '../Sections/About.jsx'
-import introTimeline from '../animations/introTimeline.jsx'
-import { useEffect } from 'react'
 
 const MainArea = () => {
-  useEffect(() => {
-    introTimeline()
-  },[])
+  
 
   return (
     <Col lg={10} className='overflow-y-scroll vh-100' id='mainArea' style={{scrollBehavior: "smooth"}}>
