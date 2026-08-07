@@ -10,28 +10,7 @@ import "../Components/Sidebar.css"
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Sidebar = () => {
-  const tl = gsap.timeline({
-    timeScale: 2
-  });
-  useGSAP(() => {
-    tl.from(".logoName .a", {
-      opacity: 0,
-      duration: .5,
-      stagger: .2,
-    });
-
-    tl.from(".nav-link", {
-      opacity: 0,
-      x: 20,
-      stagger: .2,
-    });
-
-    tl.from(".logoBrand", {
-      opacity: 0,
-      y: 20,
-      stagger: .2,
-    });
-  });
+  
   return (
     <Col
       lg={2}
@@ -40,7 +19,7 @@ const Sidebar = () => {
       <div className="gap-3 d-flex text-center flex-column">
         <img
           src={logo}
-          className="rounded-circle d-xl-inline d-none mx-auto"
+          className="rounded-circle d-xl-inline d-none mx-auto img-logo"
           height={150}
           width={150}
           style={{ boxShadow: "0px 0px 10px 2px rgba(255, 255, 255, 0.5)" }}
