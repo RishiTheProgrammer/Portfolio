@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '@gsap/react'
@@ -6,12 +7,31 @@ import { useGSAP } from '@gsap/react'
 import "./Home.css"
 import hero from "../assets/HeroIMG.png"
 import { Element, Link } from 'react-scroll'
+import Typed from "typed.js"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Home = () => {
+    const typedRef = useRef(null)
+
     useGSAP(() => {
     }, [])
+    useEffect(() => {
+        const typed = new Typed(typedRef.current, {
+            strings: [
+        "Frontend Developer",
+        "React Developer",
+        "UI Designer"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    return () => {
+      typed.destroy();
+    };
+        }, [])
   return (
 <Element name="home">
     <section id="home">
@@ -21,7 +41,7 @@ const Home = () => {
                     <Card className='bg-transparent border-0'>
                         <Card.Body>
                             <Card.Title className='text-white display-4 fw-bold'>Hi, I'm <span className='text-primary name'>Rishi</span></Card.Title>
-                            <Card.Subtitle className='text-white fs-3 fw-semibold'>A Frontend Developer</Card.Subtitle>
+                            <span className='text-white fs-3 fw-semibold card-subtitle' ref={typedRef}></span>
                             <Card.Text className='text-white mt-3'>I am a passionate frontend developer with a strong focus on creating visually appealing and user-friendly web applications. With expertise in HTML, CSS, JavaScript, and modern frontend frameworks, I strive to deliver seamless user experiences and innovative solutions.</Card.Text>
                             <div className="d-flex align-items-center">
                                 <Link to="about" containerId="mainArea" className="btn btn-primary">
