@@ -1,8 +1,6 @@
 .nav-link{
     color: rgba(128, 128, 128, 0.637);
     transition: all 0.3s ease-in-out;
-    padding: 0.5rem 1rem !important;
-    border-radius: 0.5rem;
 }
 .nav-link:hover{
     cursor: pointer;
@@ -10,8 +8,8 @@
 }
 
 .nav-link.active{
-    color: #031633;
-    background-color: #fafafaf3;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
 }
 
 .nav-link.active:hover{
