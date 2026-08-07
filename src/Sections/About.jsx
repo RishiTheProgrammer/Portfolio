@@ -4,6 +4,9 @@ import '@gsap/react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useGSAP } from '@gsap/react'
 import { Element } from 'react-scroll'
+import { SiGreensock } from 'react-icons/si'
+import { SiBootstrap } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -15,8 +18,8 @@ const About = () => {
             <Element name="about">
     
     <section id="about">
-        <Container fluid>
-            <Row className='min-vh-100 d-flex justify-content-center align-items-center'>
+        <Container fluid style={{minHeight: "75vh"}} className='d-flex justify-content-center align-items-center flex-column'>
+            <Row>
                 <Col md={6} className='text-start ps-xl-5'>
                     <Card className='bg-transparent border-0'>
                         <Card.Body>
@@ -32,7 +35,7 @@ const About = () => {
                                 <Card.Body className='text-center'>
                                     <div className='d-flex'>
                                         <div className='d-flex align-items-center justify-content-center text-center'>
-                                            <i className='bi bi-person display-5'></i>
+                                            <i className='bi bi-person-fill display-5'></i>
                                         </div>
                                         <div className='d-flex align-items-start justify-content-center text-start flex-column ms-3 gap-2'>
                                             <Card.Subtitle className='fs-5'>Name</Card.Subtitle>
@@ -47,7 +50,7 @@ const About = () => {
                                 <Card.Body className='text-center'>
                                     <div className='d-flex'>
                                         <div className='d-flex align-items-center justify-content-center text-center'>
-                                            <i className='bi bi-mortarboard display-5'></i>
+                                            <i className='bi bi-mortarboard-fill display-5'></i>
                                         </div>
                                         <div className='d-flex align-items-start justify-content-center text-start flex-column ms-3 gap-2'>
                                             <Card.Subtitle className='fs-5'>Class</Card.Subtitle>
@@ -90,6 +93,33 @@ const About = () => {
                     </Row>
                 </Col>
             </Row>
+            <Row className='mt-5 gap-3'>
+                        <h2 className='mb-3'>Currently Learning</h2>
+                        <Col className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
+                            <div className="d-flex align-items-center justify-content-center text-center">
+                                <i class="devicon-react-original colored display-6"></i>
+                            </div>
+                            <div className='fs-3'>React JSX</div>
+                        </Col>
+                        <Col className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
+                            <div className="d-flex align-items-center justify-content-center text-center">
+                                <SiGreensock className='display-6' style={{color: "#88CE02"}}/>
+                            </div>
+                            <div className='fs-3' title="GreenSock Animation Platform">GSAP</div>
+                        </Col>
+                        <Col className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
+                            <div className="d-flex align-items-center justify-content-center text-center">
+                                <SiBootstrap className='display-6' style={{color: "#7511f4"}}/>
+                            </div>
+                            <div className='fs-3'>Bootstrap</div>
+                        </Col>
+                        <Col className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
+                            <div className="d-flex align-items-center justify-content-center text-center">
+                                <SiJavascript className='display-6' style={{color: "#f0db4f"}}/>
+                            </div>
+                            <div className='fs-3'>JavaScript</div>
+                        </Col>
+                    </Row>
         </Container>
     </section>
     </Element>
