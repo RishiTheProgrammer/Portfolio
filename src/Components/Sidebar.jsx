@@ -33,7 +33,7 @@ const Sidebar = () => {
         </h1>
       </div>
       
-      <div className="ms-3 d-flex flex-column gap-2">
+      <div className="ms-3 d-flex flex-column gap-3">
         <Link to="home" spy={true} smooth={false} containerId="mainArea" activeClass="active" className="nav-link">
           <i className="bi bi-house-fill me-1"></i> Home
         </Link>
