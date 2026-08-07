@@ -1,18 +1,20 @@
 .nav-link{
     color: rgba(128, 128, 128, 0.637);
-    transition: all 0.3s ease-in-out;
+    padding-left: 1rem !important;
 }
 .nav-link:hover{
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background-color: #031633;
+    transform: translateX(6px) !important;
 }
 
 .nav-link.active{
+    transition: all 0.3s ease-in-out;
     color: #fff;
     text-shadow: 0px 0px 10px #fff;
+    border-left: #fafafa solid 3px;
 }
 
 .nav-link.active:hover{
-    color: #031633;
-    background-color: #e0e0e0;
+    transform: translateX(0px) !important;
 }
