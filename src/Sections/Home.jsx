@@ -36,7 +36,7 @@ const Home = () => {
 <Element name="home">
     <section id="home">
         <Container fluid>
-            <Row className='min-vh-100 d-flex justify-content-center align-items-center'>
+            <Row className='d-flex justify-content-center align-items-center' style={{minHeight: "100vh"}}>
                 <Col md={6} className='text-start ps-xl-5'>
                     <Card className='bg-transparent border-0'>
                         <Card.Body>
