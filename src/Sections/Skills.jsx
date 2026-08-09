@@ -13,6 +13,7 @@ import { RiCodeSSlashFill } from "react-icons/ri";
 import { FaWandSparkles } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { SiGsap } from "react-icons/si";
 import { SiScrollreveal } from "react-icons/si";
 import { TbCircleLetterTFilled } from "react-icons/tb";
@@ -44,7 +45,7 @@ const Skills = () => {
           <Row className='mt-5'>
             <h3 className="text-success mb-4"><FaTools/> Tools and Others</h3>
             <SkillCard icon={<FaGitAlt size={50} color="#f34f29"/>} title="Git" level="Intermediate" text="Tool I use to commit my projects." iconClassName="bg-danger-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
-            <SkillCard icon={<SiJavascript size={58} color="#f0db4f" className='rounded-3'/>} title="JavaScript" level="Intermediate" text="Creating functional and dynamic web experiences." xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
+            <SkillCard icon={<FaGithub size={50} color="#fafafa"/>} title="GitHub" level="Intermediate" text="Tool I use to manage my code repositories." iconClassName='bg-dark-subtle rounded-3 p-2' xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
             <SkillCard icon={<IoLogoCss3 size={50} color="#2061ef"/>} title="CSS3" level="Advanced" text="Styling modern websites with creativity." iconClassName="bg-primary-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
             <SkillCard icon={<BsBootstrapFill size={58} color="#5337a3" className='rounded-3'/>} title="Bootstrap" level="Advanced" text="Develpoing layouts and responsives with Bootstrap." xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
           </Row>
