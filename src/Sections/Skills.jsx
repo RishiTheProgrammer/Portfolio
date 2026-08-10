@@ -17,6 +17,8 @@ import { FaGithub } from "react-icons/fa";
 import { SiGsap } from "react-icons/si";
 import { SiScrollreveal } from "react-icons/si";
 import { TbCircleLetterTFilled } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
+import { SiVite } from "react-icons/si";
 import SkillCard from '../Components/SkillCard.jsx';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -44,10 +46,10 @@ const Skills = () => {
           </Row>
           <Row className='mt-5'>
             <h3 className="text-success mb-4"><FaTools/> Tools and Others</h3>
-            <SkillCard icon={<FaGitAlt size={50} color="#f34f29"/>} title="Git" level="Intermediate" text="Tool I use to commit my projects." iconClassName="bg-danger-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
+            <SkillCard icon={<FaGitAlt size={50} color="#f34f29"/>} title="Git" level="Advanced" text="Tool I use to commit my projects." iconClassName="bg-danger-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
             <SkillCard icon={<FaGithub size={50} color="#fafafa"/>} title="GitHub" level="Intermediate" text="Tool I use to manage my code repositories." iconClassName='bg-dark-subtle rounded-3 p-2' xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
-            <SkillCard icon={<IoLogoCss3 size={50} color="#2061ef"/>} title="CSS3" level="Advanced" text="Styling modern websites with creativity." iconClassName="bg-primary-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
-            <SkillCard icon={<BsBootstrapFill size={58} color="#5337a3" className='rounded-3'/>} title="Bootstrap" level="Advanced" text="Develpoing layouts and responsives with Bootstrap." xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
+            <SkillCard icon={<VscVscode size={50} color="#0078d4"/>} title="VS Code" level="Advanced" text="Tool I use to create websites  with ease and creativity." iconClassName="bg-primary-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
+            <SkillCard icon={<SiVite size={50} color="#9053ff"/>} title="Vite" level="Intermediate" text="Fast build tool for modern web development." iconClassName="rounded-3 p-2" style={{backgroundColor: "#160d27"}} xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
           </Row>
         </Container>
       </section>
