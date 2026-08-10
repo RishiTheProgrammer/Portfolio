@@ -17,8 +17,8 @@ const About = () => {
   return (
             <Element name="about">
     
-    <section id="about" style={{minHeight: "100vh"}} className='d-flex justify-content-center align-items-center flex-column'>
-        <Container fluid>
+    <section id="about">
+        <Container fluid style={{minHeight: "100vh"}} className='d-flex align-items-center flex-column py-5'>
             <Row>
                 <Col md={6} className='text-start ps-xl-5'>
                     <Card className='bg-transparent border-0'>
