@@ -1,0 +1,71 @@
+.float-element{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.float-react{
+    top: 10%;
+    left: 5%;
+    color: #61dafb;
+    animation: floatReact 6s ease-in-out infinite;
+}
+
+.float-js{
+    top: 30%;
+    left: 80%;
+    color: #f7df1e;
+    animation: floatJS 5s ease-in-out infinite;
+}
+
+.float-js svg{
+    border-radius: 5px;
+}
+
+.float-gsap{
+    top: 60%;
+    left: 0%;
+    color: #88ce02;
+    animation: floatGsap 7s ease-in-out infinite;
+}
+
+.float-github{
+    top: 80%;
+    left: 85%;
+    color: #fff;
+    animation: floatGithub 6s ease-in-out infinite;
+}
+
+.stat-card, .stat-icon, svg, .stat-title, .card{
+    transition: all .5s ease-in-out;
+}
+
+.stat-card:hover{
+    transform: translateY(-5px);
+}
+
+.row .stat-card:hover:nth-child(1) .card{
+    background-color: rgba(97, 218, 251, 0.1);
+
+}
+
+.row .stat-card:hover:nth-child(2) .card{
+    background-color: rgba(247, 223, 30, 0.1);
+}
+
+.row .stat-card:hover:nth-child(1) svg{
+    color: #61dafb;
+    transform: rotate(180deg);
+}
+
+.row .stat-card:hover:nth-child(2) svg{
+    color: #f7df1e;
+    border-radius: 5px;
+}
