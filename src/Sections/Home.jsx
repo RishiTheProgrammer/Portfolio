@@ -1,64 +1,133 @@
-import { useRef, useEffect } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import '@gsap/react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
-import { useGSAP } from '@gsap/react'
-import "./Home.css"
-import hero from "../assets/HeroIMG.png"
-import { Element, Link } from 'react-scroll'
-import Typed from "typed.js"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "@gsap/react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { useGSAP } from "@gsap/react";
+import "./Home.css";
+// import hero from "../assets/HeroIMG.png"
+import IntroTimeline from "../animations/introTimeline.jsx";
+import CustomNavbar from "../Components/Navbar";
+import { useNavigate } from "react-router-dom";
+import { useRef } from "react";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiHtml5 } from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { BsBootstrapFill } from "react-icons/bs";
+import { SiVite } from "react-icons/si";
+import { SiGsap } from "react-icons/si";
+import { FaGithub } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Home = () => {
-    const typedRef = useRef(null)
-
-    useGSAP(() => {
-    }, [])
-    useEffect(() => {
-        const typed = new Typed(typedRef.current, {
-            strings: [
-        "Frontend Developer",
-        "React Developer",
-        "UI Designer"
-      ],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-    });
-
-    return () => {
-      typed.destroy();
-    };
-        }, [])
+  const heroTitleRef = useRef();
+  const heroSubTitleRef = useRef();
+  const heroTextRef = useRef();
+  const ctaBtnRef = useRef();
+  const navigate = useNavigate();
+  useGSAP(() => {
+    IntroTimeline({ heroTitleRef, heroSubTitleRef, heroTextRef, ctaBtnRef });
+  });
   return (
-<Element name="home">
     <section id="home">
-        <Container fluid>
-            <Row className='d-flex justify-content-center align-items-center' style={{minHeight: "100vh"}}>
-                <Col md={6} className='text-start ps-xl-5'>
-                    <Card className='bg-transparent border-0'>
-                        <Card.Body>
-                            <Card.Title className='text-white display-4 fw-bold'>Hi, I'm <span className='text-primary name'>Rishi</span></Card.Title>
-                            <span className='text-white fs-3 fw-semibold card-subtitle' ref={typedRef}></span>
-                            <Card.Text className='text-white mt-3'>I am a passionate frontend developer with a strong focus on creating visually appealing and user-friendly web applications. With expertise in HTML, CSS, JavaScript, and modern frontend frameworks, I strive to deliver seamless user experiences and innovative solutions.</Card.Text>
-                            <div className="d-flex align-items-center">
-                                <Link to="about" containerId="mainArea" className="btn btn-primary">
-                                    Learn More
-                                </Link>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={6} className="text-lg-end text-center pe-xl-5">
-                    <img src={hero} alt="" className="img-fluid" style={{ mixBlendMode: "lighten", opcaiy: .95,  }}/>
-                </Col>
+      <Container fluid>
+        <CustomNavbar />
+        <Row className="d-flex align-items-center min-vh-100">
+          <Col>
+        <div className="cloud-space">
+            <div className="cloud-particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div className="cloud-background-text">
+    DEVELOPER
+</div>
+          <div className="cloud-core">
+            <span>R</span>
+          </div>
+          <div className="cloud-icon icon-html">
+            <SiHtml5 />
+          </div>
+          <div className="cloud-icon icon-css">
+            <IoLogoCss3 />
+          </div>
+          <div className="cloud-icon icon-js">
+            <IoLogoJavascript />
+          </div>
+          <div className="cloud-icon icon-bootstrap">
+            <BsBootstrapFill />
+          </div>
+          <div className="cloud-icon icon-react">
+            <FaReact />
+          </div>
+          <div className="cloud-icon icon-vite">
+            <SiVite />
+          </div>
+          <div className="cloud-icon icon-gsap">
+            <SiGsap />
+          </div>
+          <div className="cloud-icon icon-github">
+            <FaGithub />
+          </div>
+        </div>
+          </Col>
+        </Row>
+        <Row className="d-flex align-items-center min-vh-100 g-3">
+          <div className="mb-5">
+            <h1 className="text-center display-1 fw-semibold">What I build?</h1>
+            <h3 className="text-center display-4 fw-semibold">
+              Interfaces that feels alive.
+            </h3>
+          </div>
+          <Col lg={8}>
+            <Card className="bg-transparent border-0 h-100">
+              <Card.Body style={{ minHeight: "400px" }} className="text-center">
+                <Card.Title className="text-white display-5 fw-semibold">
+                  React Interfaces
+                </Card.Title>
+                <Card.Text className="text-white display-6 fw-semibold">
+                  React + UI + Components
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={4}>
+            <Row className="g-3">
+              <Col>
+                <Card className="bg-transparent border-0">
+                  <Card.Body>
+                    <Card.Title className="text-white display-6 fw-semibold">
+                      Motion
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card className="bg-transparent border-0">
+                  <Card.Body>
+                    <Card.Title className="text-white display-6 fw-semibold">
+                      Interaction
+                    </Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
             </Row>
-        </Container>
+          </Col>
+        </Row>
+      </Container>
     </section>
-    </Element>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
