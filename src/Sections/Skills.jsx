@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@gsap/react";
 import { Container, Row } from "react-bootstrap";
 import { useGSAP } from "@gsap/react";
-import { Element } from "react-scroll";
 import { RiReactjsFill } from "react-icons/ri";
 import { SiJavascript } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
@@ -20,15 +19,16 @@ import { TbCircleLetterTFilled } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { SiVite } from "react-icons/si";
 import SkillCard from '../Components/SkillCard.jsx';
+import CustomNavbar from "../Components/Navbar.jsx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Skills = () => {
   useGSAP(() => {}, []);
   return (
-    <Element name="skills">
-      <section id="skills">
-        <Container fluid style={{minHeight: "100vh"}} className='d-flex align-items-center flex-column'>
+    <section id="skills">
+        <CustomNavbar/>
+        <Container fluid>
             <h1 className="text-center display-5 fw-semibold mt-5 d-flex gap-2">Skills <span className='d-none d-lg-block'> That Power My Work</span></h1>
           <Row className='mt-5 g-4'>
             <h3 className="text-primary mb-4"><RiCodeSSlashFill/> Frontend Development</h3>
@@ -53,7 +53,6 @@ const Skills = () => {
           </Row>
         </Container>
       </section>
-    </Element>
   );
 };
 
