@@ -1,129 +1,145 @@
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import '@gsap/react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
-import { useGSAP } from '@gsap/react'
-import { Element } from 'react-scroll'
-import { SiGreensock } from 'react-icons/si'
-import { SiBootstrap } from "react-icons/si";
+import "./About.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "@gsap/react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { useGSAP } from "@gsap/react";
+import { SiGsap } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { AboutAnimation } from "../animations/aboutAnimation.jsx";
+import CustomNavbar from "../Components/Navbar.jsx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const About = () => {
-    useGSAP(() => {
-        
-    }, [])
+  const code = `01 const Rishi = {
+02      role: "Frontend Dev",
+03      focus: "UI + Motion",
+04      stack: [
+05         "React",
+06         "JavaScript",
+07         "GSAP",
+08         "HTML",
+09         "CSS",
+10         "Bootstrap"
+11     ]
+12 };`;
+  const stats = [
+    {
+      title: "React",
+      icon: <FaReact />,
+      description: "I use this to make components based websites.",
+      id: 1,
+    },
+    {
+      title: "JavaScript",
+      icon: <SiJavascript />,
+      description: "I use this to create functions, events and triggers.",
+      id: 2,
+    },
+  ];
+  useGSAP(() => {
+    AboutAnimation();
+  }, []);
   return (
-            <Element name="about">
-    
-    <section id="about">
-        <Container fluid style={{minHeight: "100vh"}} className='d-flex align-items-center flex-column py-5'>
-            <Row>
-                <Col md={6} className='text-start ps-xl-5'>
-                    <Card className='bg-transparent border-0'>
+      <section id="about">
+        <Container fluid>
+            <CustomNavbar/>
+          <h1
+            className="text-center text-white mb-5 display-1 fw-bold d-none d-lg-block title"
+            style={{ letterSpacing: "2rem" }}
+          >
+            ABOUT ME
+          </h1>
+          <h1 className="text-center text-white mb-3 display-1 fw-bold d-lg-none d-block title">
+            ABOUT ME
+          </h1>
+          <Row className="d-flex align-items-center justify-content-center">
+            <Col md={6} className="text-start ps-xl-5 mt-3 mt-lg-0 hero-left">
+              <Card className="bg-transparent border-0">
+                <Card.Body>
+                  <Card.Title className="text-white display-4 fw-semibold">
+                    Hi, Myself Rishi
+                  </Card.Title>
+                  <Card.Text className="text-white mt-3 fs-5 lh-base">
+                    I'm an 8th class student and a passionate frontend
+                    developer. I love to build functional and beautiful
+                    webpages. I always learn new technologies and improve my
+                    past skills.
+                  </Card.Text>
+                </Card.Body>
+                <Row className='d-none d-lg-flex'>
+                  {stats.map((stat) => (
+                    <Col
+                      md={6}
+                      key={stat.id}
+                      className="mt-3 mt-lg-0 stat-card"
+                    >
+                      <Card className="border-0">
+                        <Card.Header className="d-flex align-items-center justify-content-between">
+                          <span className="stat-icon fs-2">{stat.icon}</span>
+                          <span className="stat-title fs-3">{stat.title}</span>
+                        </Card.Header>
                         <Card.Body>
-                            <Card.Title className='text-white display-4 fw-semibold'><i class="bi bi-person text-primary"></i> About me</Card.Title>
-                            <Card.Text className='text-white mt-3'>I'm an 8th class student and a passionate frontend developer. I love to build functional and beautiful webpages. I always learn new technologies and improve my past skills.</Card.Text>
+                          <Card.Text className="text-white">
+                            {stat.description}
+                          </Card.Text>
                         </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={6} className="text-lg-end text-center pe-xl-5">
-                    <Row className='row-cols-2'>
-                        <Col xs={12} sm={6} className='border border-1 p-0'>
-                            <Card className='bg-transparent border-0 w-100'>
-                                <Card.Body className='text-center'>
-                                    <div className='d-flex'>
-                                        <div className='d-flex align-items-center justify-content-center text-center'>
-                                            <i className='bi bi-person-fill display-5'></i>
-                                        </div>
-                                        <div className='d-flex align-items-start justify-content-center text-start flex-column ms-3 gap-2'>
-                                            <Card.Subtitle className='fs-5'>Name</Card.Subtitle>
-                                            <Card.Subtitle>Rishi</Card.Subtitle>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={12} sm={6} className='border border-1 p-0'>
-                            <Card className='bg-transparent border-0 w-100'>
-                                <Card.Body className='text-center'>
-                                    <div className='d-flex'>
-                                        <div className='d-flex align-items-center justify-content-center text-center'>
-                                            <i className='bi bi-mortarboard-fill display-5'></i>
-                                        </div>
-                                        <div className='d-flex align-items-start justify-content-center text-start flex-column ms-3 gap-2'>
-                                            <Card.Subtitle className='fs-5'>Class</Card.Subtitle>
-                                            <Card.Subtitle>8th</Card.Subtitle>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={12} sm={6} className='border border-1 p-0'>
-                            <Card className='bg-transparent border-0 w-100'>
-                                <Card.Body className='text-center'>
-                                    <div className='d-flex'>
-                                        <div className='d-flex align-items-center justify-content-center text-center'>
-                                            <i className='bi bi-geo-alt-fill display-5'></i>
-                                        </div>
-                                        <div className='d-flex align-items-start justify-content-center text-start flex-column ms-3 gap-2'>
-                                            <Card.Subtitle className='fs-5'>Location</Card.Subtitle>
-                                            <Card.Subtitle>Pakistan</Card.Subtitle>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={12} sm={6} className='border border-1 p-0'>
-                            <Card className='bg-transparent border-0 w-100'>
-                                <Card.Body className='text-center'>
-                                    <div className='d-flex'>
-                                        <div className='d-flex align-items-center justify-content-center text-center'>
-                                            <i className='ri-target-fill display-5'></i>
-                                        </div>
-                                        <div className='d-flex align-items-start justify-content-center text-start flex-column ms-3 gap-2'>
-                                            <Card.Subtitle className='fs-5'>Focus</Card.Subtitle>
-                                            <Card.Subtitle>UI Dev.</Card.Subtitle>
-                                        </div>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
-            <Row className='mt-5 px-xl-2'>
-                        <h2 className='mb-3'>Currently Learning</h2>
-                        <Col xs={12} sm={6} lg={3} className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
-                            <div className="d-flex align-items-center justify-content-center text-center">
-                                <i class="devicon-react-original colored display-6"></i>
-                            </div>
-                            <div className='fs-3'>React JSX</div>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
-                            <div className="d-flex align-items-center justify-content-center text-center">
-                                <SiGreensock className='display-6' style={{color: "#88CE02"}}/>
-                            </div>
-                            <div className='fs-3' title="GreenSock Animation Platform">GSAP</div>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
-                            <div className="d-flex align-items-center justify-content-center text-center">
-                                <SiBootstrap className='display-6' style={{color: "#7511f4"}}/>
-                            </div>
-                            <div className='fs-3'>Bootstrap</div>
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className='border border-1 p-0 d-flex justify-content-evenly align-items-center py-3'>
-                            <div className="d-flex align-items-center justify-content-center text-center">
-                                <SiJavascript className='display-6' style={{color: "#f0db4f"}}/>
-                            </div>
-                            <div className='fs-3'>JavaScript</div>
-                        </Col>
-                    </Row>
-        </Container>
-    </section>
-    </Element>
-  )
-}
+                      </Card>
+                    </Col>
+                  ))}
+                </Row>
+              </Card>
+            </Col>
+            <Col
+              md={6}
+              className="d-flex justify-content-center align-items-center mt-3 mt-lg-0 hero-right"
+            >
+                <div className="editor-wrapper position-relative" style={{width: "min(100%, 400px)"}}>
 
-export default About
+              <Card
+                className="border-0 mx-auto"
+                style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    width: "max-content",
+                  backdropFilter: "blur(10px)",
+                }}
+                >
+                <Card.Header>
+                  <Card.Title className="d-flex justify-content-between align-items-center text-white px-2">
+                    <span style={{ letterSpacing: "5px" }}>•••</span>
+                    <span>About.jsx</span>
+                  </Card.Title>
+                </Card.Header>
+                <Card.Body
+                  className="text-white text-monospace"
+                  style={{ fontSize: "1.2rem" }}
+                  >
+                  <pre>
+                    <code>{code}</code>
+                  </pre>
+                </Card.Body>
+              </Card>
+              <div className="float-element float-react d-none d-sm-flex">
+                <FaReact />
+              </div>
+              <div className="float-element float-js d-none d-sm-flex">
+                <SiJavascript />
+              </div>
+              <div className="float-element float-gsap d-none d-sm-flex">
+                <SiGsap />
+              </div>
+              <div className="float-element float-github d-none d-sm-flex">
+                <FaGithub />
+              </div>
+                    </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+  );
+};
+
+export default About;
