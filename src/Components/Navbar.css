@@ -1,7 +1,6 @@
 #navbar{
     backdrop-filter: blur(10px);
-    background: rgba(5, 27, 61, 0.75);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    background: rgba(225,225, 225, 0.095);
     padding: 0px 1rem;
 }
 
@@ -10,19 +9,23 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
+    color: #fff;
+    text-decoration: none;
 }
 
-.nav-link::after{
+.nav-link.active::before{
     content: '';
     position: absolute;
-    bottom: -5px;
+    width: 110%;
+    height: 110%;
+    bottom: 1%;
     left: 50%;
-    width: 0;
-    height: 3px;
-    border-radius: 50px;
-    background: #3b82f6;
+    border-radius: 10px;
     transform: translateX(-50%);
     transition: all 0.3s ease-in-out;
+    z-index: -1;
+    backdrop-filter: blur(300px);
+    transition: all ease-in-out 0.3s;
 }
 
 .nav-link:hover::after, .nav-link.active::after{

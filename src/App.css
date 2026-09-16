@@ -3,4 +3,21 @@
 .App{
     font-family: 'Poppins', sans-serif;
     background: #050814;
+    overflow-x: hidden;
+}
+
+.custom-cursor {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  z-index: 9999;
 }
