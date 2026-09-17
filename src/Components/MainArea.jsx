@@ -8,7 +8,7 @@ const MainArea = () => {
   
 
   return (
-    <Col id='mainArea' style={{scrollBehavior: "smooth"}}>
+    <Col id='mainArea' style={{scrollBehavior: "smooth"}} className='px-0'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
