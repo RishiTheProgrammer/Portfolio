@@ -29,9 +29,9 @@ const App = () => {
   };
   },[])
   return (
-    <Container fluid className="App">
+    <Container fluid className="App px-0">
       <div className="custom-cursor d-none d-lg-block"></div>
-      <Row>
+      <Row className='g-0'>
           <MainArea/>
       </Row>
     </Container>
