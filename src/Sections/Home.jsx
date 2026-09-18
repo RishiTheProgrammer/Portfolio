@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <section id="home">
       <div>
-        <div className='aurora-background'>
-          <AuroraBG />
+        <div className='background'>
+          {background}
         </div>
         <CustomNavbar />
         <Row>
