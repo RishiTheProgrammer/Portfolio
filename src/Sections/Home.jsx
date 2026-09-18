@@ -33,7 +33,7 @@ const Home = () => {
         </div>
         <CustomNavbar />
         <Row>
-          <Col className='min-vh-100 d-flex align-items-center justify-content-center pt-5 pt-sm-0'>
+          <Col className='min-vh-100 d-flex align-items-center justify-content-center pt-3 pt-sm-0'>
             <div className='hero-content'>
                 <h1 className="hero-title text-uppercase text-center">I don't only create websites</h1>
                 <h3 className='hero-subtitle text-center text-uppercase d-none d-sm-block'>I create worlds</h3>
