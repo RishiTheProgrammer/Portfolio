@@ -21,7 +21,7 @@ const CustomNavbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="d-flex align-items-center justify-content-evenly gap-lg-3 ms-lg-auto flex-md-row">
+          <Nav className="d-flex align-items-center justify-content-evenly gap-lg-3 ms-lg-auto flex-sm-row">
             <NavLink
               to="/" className={navClass} end
             >
