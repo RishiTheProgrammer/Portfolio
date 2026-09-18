@@ -13,7 +13,7 @@
     text-decoration: none;
 }
 
-.nav-link.active::before{
+.nav-link.active::before, .nav-link:hover::before{
     content: '';
     position: absolute;
     width: 110%;
