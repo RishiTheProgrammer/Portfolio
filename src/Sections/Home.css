@@ -46,3 +46,34 @@
     color: #fff;
     margin-top: 1rem;
 }
+.mobile-bg {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      #e100ff,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      #f7f7f7,
+      transparent 20%
+    );
+
+  background-size: 140% 140%, 140% 140%, 100% 100%;
+  background-position: 0% 0%, 100% 100%, 0 0;
+
+  animation: ambientMove 2s ease-in-out infinite alternate;
+}
+
+@keyframes ambientMove {
+  from {
+    background-position: 0% 0%, 100% 100%, 0 0;
+  }
+
+  to {
+    background-position: 20% 10%, 80% 90%, 0 0;
+  }
+}
