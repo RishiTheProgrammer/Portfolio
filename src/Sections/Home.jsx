@@ -22,6 +22,9 @@ const Home = () => {
   useGSAP(() => {
     homeAnimation({ heroTitleRef, heroSubTitleRef, heroTextRef, ctaBtnRef });
   });
+  const isMobile = window.innerWidth < 768;
+
+  const background = isMobile ? <div className='mobile-bg'></div> : <AuroraBG />;
   return (
     <section id="home">
       <div>
