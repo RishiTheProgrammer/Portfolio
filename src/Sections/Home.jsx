@@ -34,6 +34,26 @@ const Home = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  const statCard = [
+    {
+      id: 1,
+      icon: <FaReact/>,
+      title: "React",
+      description: "Making component-based UI and Interfaces to make the website easy to make."
+    },
+    {
+      id: 2,
+      icon: <FaJs/>,
+      title: "JavaScript",
+      description: "Making triggers, functions and eventListners to make website dynamic."
+    },
+    {
+      id: 3,
+      icon: <SiGsap/>,
+      title: "GSAP",
+      description: "Making beautiful entrance, moving and subtle animations to make interface engaging."
+    }
+  ];
   const background = isMobile ? <div className='mobile-bg'></div> : <AuroraBG />;
   return (
     <section id="home">
