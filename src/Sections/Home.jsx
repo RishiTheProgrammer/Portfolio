@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import AuroraBG from "../Components/AuroraBG";
 import SpotlightCard from "../Components/SpotlightCard";
+import { FaJs, FaReact } from "react-icons/fa6";
+import { SiGsap } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
