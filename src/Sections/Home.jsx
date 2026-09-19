@@ -75,12 +75,10 @@ const Home = () => {
             </div>
           </Col>
         </Row>
-        <Row className="align-items-center min-vh-100 g-3 px-2 px-lg-0 mt-5 mt-sm-0">
-          <div className="mb-5">
-            <h1 className="text-center display-1 fw-semibold">What I build?</h1>
-            <h3 className="text-center display-4 fw-semibold">
-              Interfaces that feels alive.
-            </h3>
+        <Row className="align-items-center justify-content-evenly min-vh-100 g-3 px-2 px-lg-0 mt-5 mt-sm-0" id="wib">
+          <div className="">
+            <h1 className="text-center font-italianno display-1">What I Build ?</h1>
+            <h3 className="text-center display-4">Interfaces That Feels Alive</h3>
           </div>
           <Col lg={6}>
             <SpotlightCard>
