@@ -39,19 +39,34 @@ const Home = () => {
       id: 1,
       icon: <FaReact/>,
       title: "React",
-      description: "Making component-based UI and Interfaces to make the website easy to make."
+      description: "Making component-based UI and Interfaces to make the website easy and simple to make.",
+      features: [
+      "Reusable components",
+      "Responsive interfaces",
+      "Component-based architecture",
+      ],
     },
     {
       id: 2,
       icon: <FaJs/>,
       title: "JavaScript",
-      description: "Making triggers, functions and eventListners to make website dynamic."
+      description: "Making triggers, functions and eventListners to make website dynamic, controllable and functional.",
+      features: [
+      "Interactive UI",
+      "Event-driven interactions",
+      "Dynamic functionality",
+      ],
     },
     {
       id: 3,
       icon: <SiGsap/>,
       title: "GSAP",
-      description: "Making beautiful entrance, moving and subtle animations to make interface engaging."
+      description: "Making beautiful entrance, moving and subtle animations to make interface engaging.",
+      features: [
+      "Entrance animations",
+      "Scroll-based motion",
+      "Interactive animations",
+      ],
     }
   ];
   const background = isMobile ? <div className='mobile-bg'></div> : <AuroraBG />;
