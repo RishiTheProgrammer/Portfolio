@@ -80,15 +80,12 @@ const Home = () => {
             <h1 className="text-center font-italianno display-1">What I Build ?</h1>
             <h3 className="text-center display-4">Interfaces That Feels Alive</h3>
           </div>
-          <Col lg={6}>
-            <SpotlightCard>
-                <Card.Body className='p-4 text-center'>
-                    <Card.Title className="text-white display-5 fw-semibold">
-                      React Interfaces
-                    </Card.Title>
-                    <Card.Text className="text-white display-6 fw-semibold mt-3">
-                      React + UI + Components
-                    </Card.Text>
+          {statCard.map((stat) => (
+            <Col lg={4} key={stat.id}>
+              <SpotlightCard>
+                <Card.Header className='d-flex align-items-center justify-content-between px-2 fs-1 mb-2'><span>{stat.icon}</span><span>{stat.title}</span></Card.Header>
+                <Card.Body>
+                  <Card.Text className='text-capitalize'>{stat.description}</Card.Text>
                 </Card.Body>
             </SpotlightCard>
           </Col>
