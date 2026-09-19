@@ -40,12 +40,16 @@
 }
 
 .hero-content .hero-subtitle{
-    font-family: 'Italianno';
     font-size: 3.5rem;
     word-spacing: 1rem;
     color: #fff;
     margin-top: 1rem;
 }
+ 
+.font-italianno{
+  font-family: 'Italianno';
+}
+
 .mobile-bg {
   position: absolute;
   inset: 0;
