@@ -3,29 +3,34 @@ import gsap from "gsap";
 
 gsap.registerPlugin(useGSAP);
 
-const IntroTimeline = ({heroTitleRef, heroSubTitleRef, heroTextRef, ctaBtnRef}) => {
+const IntroTimeline = ({heroTitleRef, heroSubTitleRef, heroTextRef}) => {
   const tl = gsap.timeline();
-        tl.from((heroTitleRef.current), {
-          x: "-50%",
-          opacity: 0,
-          duration: 0.5
-        }),
-        tl.from((heroSubTitleRef.current), {
-          x: "-50%",
-          opacity: 0,
-          duration: 0.5
-        }),
-        tl.from((heroTextRef.current), {
-          clipPath: "inset(0 100% 0 0)",
-          opacity: 0,
-          duration: 0.5
-        }),
-        tl.from((ctaBtnRef.current), {
-          y: 20,
-          opacity: 0,
-          duration: 0.5,
-          ease: "power3"
-        })
+      gsap.from(heroTitleRef.current, {
+        y: 20,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+        trigger: "#wib",
+        start: "top 30%",
+        end: "bottom bottom",
+        fastScrollEnd: true,
+        invalidateOnRefresh: true,
+        markers: true
+      }
+      }),
+      gsap.from(heroSubTitleRef.current, {
+        y: 20,
+        opacity: 0,
+        delay: 1.5,
+        scrollTrigger: {
+        trigger: "#wib",
+        start: "top 30%",
+        end: "bottom bottom",
+        fastScrollEnd: true,
+        invalidateOnRefresh: true,
+        markers: true
+      }
+      })
 };
 
 export default IntroTimeline;
