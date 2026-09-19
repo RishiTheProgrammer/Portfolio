@@ -70,7 +70,7 @@ const About = () => {
                     past skills.
                   </Card.Text>
                 </Card.Body>
-                <Row className='d-none d-lg-flex'>
+                <Row className='d-none d-lg-flex stat-row'>
                   {stats.map((stat) => (
                     <Col
                       md={6}
