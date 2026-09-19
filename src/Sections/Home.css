@@ -81,3 +81,41 @@
     background-position: 20% 10%, 80% 90%, 0 0;
   }
 }
+
+.stat-card{
+  transition: all 0.5s ease-in-out;
+}
+
+.stat-card:hover{
+  transform: translateY(-10px);
+}
+
+.stat-features {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#wib .alive{
+  position: relative;
+  background: #080863;
+}
+
+#wib .alive::before{
+  content: '';
+  position: absolute;
+  width: 7%;
+  height: 10%;
+  bottom: -5px;
+  right: -5px;
+  background-color: #fafafa;
+}
+
+#wib .alive::after{
+  content: '';
+  position: absolute;
+  width: 7%;
+  height: 10%;
+  top: -5px;
+  left: -5px;
+  background-color: #fafafa;
+}
