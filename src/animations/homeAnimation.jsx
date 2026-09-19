@@ -14,8 +14,7 @@ const IntroTimeline = ({heroTitleRef, heroSubTitleRef, heroTextRef}) => {
         start: "top 30%",
         end: "bottom bottom",
         fastScrollEnd: true,
-        invalidateOnRefresh: true,
-        markers: true
+        invalidateOnRefresh: true
       }
       }),
       gsap.from(heroSubTitleRef.current, {
@@ -27,8 +26,7 @@ const IntroTimeline = ({heroTitleRef, heroSubTitleRef, heroTextRef}) => {
         start: "top 30%",
         end: "bottom bottom",
         fastScrollEnd: true,
-        invalidateOnRefresh: true,
-        markers: true
+        invalidateOnRefresh: true
       }
       })
 };
