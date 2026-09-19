@@ -8,7 +8,7 @@ import "./Home.css";
 import homeAnimation from "../animations/homeAnimation.jsx";
 import CustomNavbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import AuroraBG from "../Components/AuroraBG";
 import SpotlightCard from "../Components/SpotlightCard";
 
