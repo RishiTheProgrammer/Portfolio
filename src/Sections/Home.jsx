@@ -87,30 +87,9 @@ const Home = () => {
                 <Card.Body>
                   <Card.Text className='text-capitalize'>{stat.description}</Card.Text>
                 </Card.Body>
-            </SpotlightCard>
-          </Col>
-          <Col lg={6}>
-            <Row className="g-3">
-              <Col>
-                <Card className="bg-transparent border-0">
-                  <Card.Body>
-                    <Card.Title className="text-white display-6 fw-semibold">
-                      Motion
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card className="bg-transparent border-0">
-                  <Card.Body>
-                    <Card.Title className="text-white display-6 fw-semibold">
-                      Interaction
-                    </Card.Title>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Col>
+              </SpotlightCard>
+            </Col>
+          ))}
         </Row>
       </div>
     </section>
