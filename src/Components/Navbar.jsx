@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@gsap/react";
+import StaggeredMenu from "./StaggeredMenu.jsx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
