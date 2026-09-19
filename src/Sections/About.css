@@ -43,29 +43,29 @@
     animation: floatGithub 6s ease-in-out infinite;
 }
 
-.stat-card, .stat-icon, svg, .stat-title, .card{
+.stat-row .stat-card, .stat-icon, svg, .stat-title, .card{
     transition: all .5s ease-in-out;
 }
 
-.stat-card:hover{
+.stat-row .stat-card:hover{
     transform: translateY(-5px);
 }
 
-.row .stat-card:hover:nth-child(1) .card{
+.stat-row .stat-card:hover:nth-child(1) .card{
     background-color: rgba(97, 218, 251, 0.1);
 
 }
 
-.row .stat-card:hover:nth-child(2) .card{
+.stat-row .stat-card:hover:nth-child(2) .card{
     background-color: rgba(247, 223, 30, 0.1);
 }
 
-.row .stat-card:hover:nth-child(1) svg{
+.stat-row .stat-card:hover:nth-child(1) svg{
     color: #61dafb;
     transform: rotate(180deg);
 }
 
-.row .stat-card:hover:nth-child(2) svg{
+.stat-row .stat-card:hover:nth-child(2) svg{
     color: #f7df1e;
     border-radius: 5px;
 }
