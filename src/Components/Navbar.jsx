@@ -64,7 +64,10 @@ const CustomNavbar = () => {
             { label: "Skills", link: "/skills" },
             { label: "Projects", link: "/projects" },
             { label: "Contact", link: "/contact" }
-          ]}
+          ]} 
+          menuButtonColor="#ffffff"
+          openMenuButtonColor="#1a1a1a"
+          changeMenuColorOnOpen={true}
         />
       </div>
     </>
