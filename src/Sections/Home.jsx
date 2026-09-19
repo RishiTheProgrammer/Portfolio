@@ -22,8 +22,16 @@ const Home = () => {
   useGSAP(() => {
     homeAnimation({ heroTitleRef, heroSubTitleRef, heroTextRef, ctaBtnRef });
   });
-  const isMobile = window.innerWidth < 768;
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(()=>{
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const background = isMobile ? <div className='mobile-bg'></div> : <AuroraBG />;
   return (
     <section id="home">
