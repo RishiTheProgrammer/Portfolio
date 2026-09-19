@@ -92,8 +92,8 @@ const Home = () => {
         </Row>
         <Row className="align-items-center justify-content-evenly min-vh-100 g-3 px-3 mt-5 mt-sm-0" id="wib">
           <div className="">
-            <h1 className="text-center font-italianno display-1">What I Build ?</h1>
-            <h3 className="text-center display-4">Interfaces That Feels Alive</h3>
+            <h1 className="text-center font-italianno display-1" ref={heroTitleRef}>What I Build ?</h1>
+            <h3 className="text-center display-4 lh-base" ref={heroSubTitleRef}>Interfaces That Feels <span className="px-2 alive">Alive</span> With</h3>
           </div>
           {statCard.map((stat) => (
             <Col lg={4} key={stat.id}>
