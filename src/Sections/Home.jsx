@@ -56,7 +56,78 @@ const Home = () => {
       ],
     }
   ];
-  const background = isMobile ? <div className='mobile-bg'></div> : <AuroraBG />;
+  const stack = [
+  {
+    id: 1,
+    name: "React",
+    category: "Core",
+    description: "Builds the component-based interface and manages the structure of the portfolio.",
+    icon: "react",
+  },
+  {
+    id: 2,
+    name: "JavaScript",
+    category: "Core",
+    description: "Powers interactions, logic, dynamic behavior, and functionality throughout the portfolio.",
+    icon: "javascript",
+  },
+  {
+    id: 3,
+    name: "Bootstrap",
+    category: "UI",
+    description: "Handles responsive layouts, grids, spacing, and reusable interface components.",
+    icon: "bootstrap",
+  },
+  {
+    id: 4,
+    name: "GSAP",
+    category: "Motion",
+    description: "Creates the animations, transitions, and motion-driven interactions.",
+    icon: "gsap",
+  },
+  {
+    id: 5,
+    name: "ScrollTrigger",
+    category: "Motion",
+    description: "Connects animations to scrolling and controls scroll-based experiences.",
+    icon: "scrolltrigger",
+  },
+  {
+    id: 6,
+    name: "Vite",
+    category: "Build",
+    description: "Provides the fast development environment and production build system.",
+    icon: "vite",
+  },
+  {
+    id: 7,
+    name: "npm",
+    category: "Build",
+    description: "Manages the packages and dependencies used by the project.",
+    icon: "npm",
+  },
+  {
+    id: 8,
+    name: "Git",
+    category: "Workflow",
+    description: "Tracks changes and keeps the project history organized.",
+    icon: "git",
+  },
+  {
+    id: 9,
+    name: "GitHub",
+    category: "Workflow",
+    description: "Stores the source code and provides version-control collaboration.",
+    icon: "github",
+  },
+  {
+    id: 10,
+    name: "Vercel",
+    category: "Deploy",
+    description: "Hosts and deploys the portfolio so it can live on the web.",
+    icon: "vercel",
+  },
+];
   return (
     <section id="home">
       <div>
