@@ -132,7 +132,7 @@ const Home = () => {
     <section id="home">
       <div>
         <div className='background'>
-          {background}
+          <div className='mobile-bg'></div>
         </div>
         <CustomNavbar />
         <Row>
