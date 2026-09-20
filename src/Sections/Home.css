@@ -67,3 +67,41 @@
   left: -5px;
   background-color: #fafafa;
 }
+
+/* ================================
+   POWERING THE PORTFOLIO
+================================ */
+
+#stack {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.stack-container {
+  display: flex;
+  gap: 0;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.stack-card {
+  position: relative;
+  flex: 0 0 320px;
+  background: #05103b;
+  border: 1px solid #373781;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px){
+  .stack-container{
+    gap: 2rem;
+    flex-direction: row;
+  }
+  .stack-card{
+    background: #050814;
+    border: 1px solid #08086387;
+  }
+}
