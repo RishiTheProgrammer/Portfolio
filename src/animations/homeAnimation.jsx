@@ -3,8 +3,9 @@ import gsap from "gsap";
 
 gsap.registerPlugin(useGSAP);
 
-const IntroTimeline = ({heroTitleRef, heroSubTitleRef, heroTextRef}) => {
-  const tl = gsap.timeline();
+const IntroTimeline = ({heroTitleRef, heroSubTitleRef}) => {
+  // const tl = gsap.timeline();
+  const cards = document.querySelectorAll(".stat-card")
       gsap.from(heroTitleRef.current, {
         y: 20,
         opacity: 0,
