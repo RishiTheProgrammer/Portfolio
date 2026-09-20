@@ -45,6 +45,7 @@
 #wib .alive{
   position: relative;
   background: #080863;
+  border: 2px solid white;
 }
 
 #wib .alive::before{
