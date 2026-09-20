@@ -167,6 +167,18 @@ const Home = () => {
             </Col>
           ))}
         </Row>
+        <Row className="min-vh-100 g-3 px-3 mt-5 mt-sm-0" id="stack">
+          <h1 className="text-center display-4 mb-5 text-capitalize fw-semibold">What is powering this Portfolio?</h1>
+          <div className="stack-container">
+            {stack.map((stack) => (
+              <div className='stack-card mx-auto mt-3 mt-lg-0' key={stack.id}>
+                <span>{stack.category}</span>
+                <h2>{stack.name}</h2>
+                <p>{stack.description}</p>
+              </div>
+            ))}
+          </div>
+        </Row>
       </div>
     </section>
   );
