@@ -20,7 +20,7 @@ const Home = () => {
   const heroTitleRef = useRef();
   const heroSubTitleRef = useRef();
   useGSAP(() => {
-    homeAnimation({ heroTitleRef, heroSubTitleRef, heroTextRef, ctaBtnRef });
+    homeAnimation({ heroTitleRef, heroSubTitleRef, });
   });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(()=>{
