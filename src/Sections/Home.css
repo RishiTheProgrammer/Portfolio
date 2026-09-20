@@ -14,19 +14,6 @@
     overflow: hidden;
 }
 
-.soft-aurora-container {
-    position: absolute;
-    z-index: 0 !important;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.soft-aurora-container canvas {
-    width: 100%;
-    height: 100%;
-}
-
 .hero-content{
     z-index: 2;
     position: relative;
@@ -48,38 +35,6 @@
  
 .font-italianno{
   font-family: 'Italianno';
-}
-
-.mobile-bg {
-  position: absolute;
-  inset: 0;
-
-  background:
-    radial-gradient(
-      circle at 20% 25%,
-      royalblue,
-      transparent 20%
-    ),
-    radial-gradient(
-      circle at 80% 60%,
-      #fff,
-      transparent 20%
-    );
-
-  background-size: 140% 140%, 140% 140%, 100% 100%;
-  background-position: 0% 0%, 100% 100%, 0 0;
-
-  animation: ambientMove 2s ease-in-out infinite alternate;
-}
-
-@keyframes ambientMove {
-  from {
-    background-position: 0% 0%, 100% 100%, 0 0;
-  }
-
-  to {
-    background-position: 20% 10%, 80% 90%, 0 0;
-  }
 }
 
 .stat-features {
