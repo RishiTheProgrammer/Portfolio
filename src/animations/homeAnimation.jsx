@@ -48,7 +48,42 @@ const IntroTimeline = ({heroTitleRef, heroSubTitleRef}) => {
         fastScrollEnd: true,
         invalidateOnRefresh: true,
         }
-      })
-};
+      });
+
+mm.add("(min-width: 768px)", () => {
+  gsap.fromTo(
+    stackCard,
+    { x: "400%" },
+    {
+      x: "-950%",
+      ease: "none",
+
+      scrollTrigger: {
+        trigger: "#stack",
+        start: "top top",
+        end: "+=2000",
+        pin: true,
+        scrub: 1,
+        invalidateOnRefresh: true,
+      },
+    }
+  );
+});
+
+mm.add("(max-width: 767px)", () => {
+  gsap.from(stackCard, {
+    y: 20,
+    opacity: 0.2,
+    stagger: 0.15,
+
+    scrollTrigger: {
+      trigger: "#stack",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1,
+    },
+  });
+});
+    }
 
 export default IntroTimeline;
