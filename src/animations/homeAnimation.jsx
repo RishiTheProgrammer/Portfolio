@@ -33,11 +33,11 @@ const IntroTimeline = ({heroTitleRef, heroSubTitleRef}) => {
         invalidateOnRefresh: true
       }
       }),
-      gsap.set(cards, {
+      gsap.set(statCards, {
         opacity: 0,
         y: 20
       }),
-      gsap.to(cards, {
+      gsap.to(statCards, {
         stagger: 0.25,
         y: 0,
         opacity: 1,
