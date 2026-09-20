@@ -29,6 +29,22 @@ const IntroTimeline = ({heroTitleRef, heroSubTitleRef}) => {
         fastScrollEnd: true,
         invalidateOnRefresh: true
       }
+      }),
+      gsap.set(cards, {
+        opacity: 0,
+        y: 20
+      }),
+      gsap.to(cards, {
+        stagger: 0.25,
+        y: 0,
+        opacity: 1,
+        scrollTrigger: {
+        trigger: "#wib",
+        start: "top 10%",
+        end: "bottom bottom",
+        fastScrollEnd: true,
+        invalidateOnRefresh: true,
+        }
       })
 };
 
