@@ -135,7 +135,7 @@ const Home = () => {
           <div className='mobile-bg'></div>
         </div>
         <CustomNavbar />
-        <Row>
+        <Row id="hero">
           <Col className='min-vh-100 d-flex align-items-center justify-content-center pt-3 pt-sm-0'>
             <div className='hero-content'>
                 <h1 className="hero-title text-uppercase text-center d-none d-sm-block">I don't only create websites</h1>
