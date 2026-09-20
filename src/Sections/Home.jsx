@@ -19,8 +19,6 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const Home = () => {
   const heroTitleRef = useRef();
   const heroSubTitleRef = useRef();
-  const heroTextRef = useRef();
-  const ctaBtnRef = useRef();
   useGSAP(() => {
     homeAnimation({ heroTitleRef, heroSubTitleRef, heroTextRef, ctaBtnRef });
   });
