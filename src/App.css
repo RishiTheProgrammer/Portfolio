@@ -22,8 +22,8 @@ body,
 }
 
 .App{
-    font-family: 'Poppins', sans-serif;
-    background: #0A0A0A;
+    font-family: var(--font-body), sans-serif;
+    background: var(--bg);
     overflow-x: hidden;
 }
 
