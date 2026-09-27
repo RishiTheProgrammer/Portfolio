@@ -50,7 +50,8 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  backdrop-filter: blur(12px);
+  gap: 0.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
