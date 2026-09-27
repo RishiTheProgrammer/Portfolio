@@ -22,11 +22,9 @@
   left: 0;
   top: 0;
   display: flex;
-  background: rgba(225, 225, 225, 0.1);
-  backdrop-filter: blur(10px);
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2em;
+  padding: 3rem 3em;
   pointer-events: none;
   z-index: 20;
 }
