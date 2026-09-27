@@ -61,7 +61,6 @@ const Home = () => {
         <div className='background'>
           <div className='mobile-bg'></div>
         </div>
-        <CustomNavbar />
         <Row id="hero">
           <Col className='min-vh-100 d-flex align-items-center justify-content-center pt-3 pt-sm-0'>
             <div className='hero-content'>
