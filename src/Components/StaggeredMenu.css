@@ -270,7 +270,11 @@
   transition:
     background 0.25s,
     color 0.25s;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 0.75rem;
+  white-space: nowrap;
   text-decoration: none;
   padding-right: 1.4em;
 }
