@@ -6,8 +6,7 @@ import { useGSAP } from "@gsap/react";
 import "./Home.css";
 // import hero from "../assets/HeroIMG.png"
 import homeAnimation from "../animations/homeAnimation.jsx";
-import CustomNavbar from "../Components/Navbar";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { useRef } from "react";
 import SpotlightCard from "../Components/SpotlightCard";
 import { FaJs, FaReact } from "react-icons/fa6";
