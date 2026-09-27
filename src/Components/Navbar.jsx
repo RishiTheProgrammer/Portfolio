@@ -1,15 +1,7 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import './Navbar.css'
-import { NavLink } from "react-router-dom";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import './Navbar.css';
 import "@gsap/react";
 import StaggeredMenu from "./StaggeredMenu.jsx";
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const CustomNavbar = () => {
   const navClass = ({ isActive }) => isActive ? "nav-link active" : "nav-link";
