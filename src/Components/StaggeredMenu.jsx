@@ -359,9 +359,8 @@ export const StaggeredMenu = ({
       data-open={open || undefined}
     >
       <header className="staggered-menu-header" aria-label="Main navigation header">
-        <div className="sm-logo" aria-label="Logo">
-          <h2><i className="bi bi-lightning-charge-fill"></i> RISHI</h2>
-        </div>
+        <div className='d-flex align-items-center gap-3 ms-auto me-3'>
+          <ThemeToggle />
         <button
           ref={toggleBtnRef}
           className="sm-toggle"
@@ -385,6 +384,7 @@ export const StaggeredMenu = ({
             <span ref={plusVRef} className="sm-icon-line sm-icon-line-v" />
           </span>
         </button>
+        </div>
       </header>
 
       <aside id="staggered-menu-panel" ref={panelRef} className="staggered-menu-panel" aria-hidden={!open}>
