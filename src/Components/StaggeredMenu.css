@@ -53,7 +53,10 @@
   backdrop-filter: blur(12px);
   gap: 0.5rem;
   background: transparent;
-  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 20rem;
+  border: 2px solid var(--border);
   cursor: pointer;
   color: #e9e9ef;
   font-weight: 500;
