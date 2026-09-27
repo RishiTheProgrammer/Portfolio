@@ -1,6 +1,8 @@
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import './StaggeredMenu.css';
+import { scroller } from "react-scroll"
+import ThemeToggle from './ThemeToggle';
 
 export const StaggeredMenu = ({
   position = 'right',
