@@ -67,9 +67,9 @@ const Home = () => {
                 <h1 className="hero-title text-uppercase text-center d-none d-sm-block">I don't only create websites</h1>
                 <h3 className='hero-subtitle text-center text-uppercase font-italianno'>I create worlds</h3>
                 <h5 className="text-center">Frontend Developer | UI/UX Designer | Motion Designer</h5>
-                <div className="mx-auto d-flex justify-content-center gap-sm-5 flex-column flex-sm-row px-5 px-lg-0">
-                <a href="#wib" className="btn btn-light btn-lg mt-3">Learn More</a>
-                <Link to="/skills" className="btn btn-outline-light btn-lg mt-3">See Skills</Link>
+                <div className="mx-auto d-flex justify-content-center gap-sm-5 flex-column flex-sm-row px-5 px-lg-0 cta-row">
+                <Link to="wib" smooth={true} duration={600} offset={-90} className="btn btn-lg mt-3 cta-btn">Learn More</Link>
+                <Link to="skills" smooth={true} duration={600} offset={-90} className="btn btn-lg mt-3 cta-btn">See Skills</Link>
                 </div>
             </div>
           </Col>
