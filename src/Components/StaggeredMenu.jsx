@@ -41,13 +41,6 @@ export const StaggeredMenu = ({
   const busyRef = useRef(false);
   const itemEntranceTweenRef = useRef(null);
 
-    useEffect(() => {
-        document.body.style.overflow = open ? "hidden" : "";
-
-        return () => {
-            document.body.style.overflow = "";
-        };
-    });
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
