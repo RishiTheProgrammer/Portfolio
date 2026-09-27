@@ -139,11 +139,15 @@
 
 .staggered-menu-panel {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: clamp(260px, 38vw, 420px);
-  height: 100dvh;
-  background: white;
+  top: 15%;
+  right: 2%;
+  border-radius: 20px;
+  width: min(360px, 93vw);
+  height: 80dvh;
+  --bs-border-opacity: 0.5;
+  background: transparent;
+  border: 1px solid;
+  border-color: var(--border) var(--bs-border-opacity);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   display: flex;
