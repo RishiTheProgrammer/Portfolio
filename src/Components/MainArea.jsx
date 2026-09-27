@@ -10,11 +10,16 @@ const MainArea = () => {
 
   return (
     <Col id='mainArea' style={{scrollBehavior: "smooth"}} className='px-0'>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-      </Routes>
+      <CustomNavbar/>
+      <Element name='home' id='home'>
+        <Home/>
+      </Element>
+      <Element name='about' id='about'>
+        <About/>
+      </Element>
+      <Element name='skills' id='skills'>
+        <Skills/>
+      </Element>
     </Col>
   )
 }
