@@ -10,11 +10,11 @@ const CustomNavbar = () => {
         <StaggeredMenu
           position="right"
           items={[
-            { label: "Home", link: "/" },
-            { label: "About", link: "/about" },
-            { label: "Skills", link: "/skills" },
-            { label: "Projects", link: "/projects" },
-            { label: "Contact", link: "/contact" }
+            { label: "Home", link: "home", icon: "bi-house-fill"},
+            { label: "About", link: "about", icon: "bi-person-fill"},
+            { label: "Skills", link: "skills", icon: "bi-mortarboard-fill"},
+            { label: "Projects", link: "projects", icon: "bi-box-fill"},
+            { label: "Contact", link: "contact", icon: "bi-telephone-fill"}
           ]} 
           socialItems={[
             {label: "GitHub", link: "https://github.com/RishiTheProgrammer/"},
