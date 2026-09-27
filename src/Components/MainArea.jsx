@@ -2,7 +2,8 @@ import { Col } from 'react-bootstrap'
 import Home from '../Sections/Home.jsx'
 import About from '../Sections/About.jsx'
 import Skills from '../Sections/Skills.jsx'
-import { Routes, Route } from "react-router-dom";
+import { Element } from "react-scroll";
+import CustomNavbar from "../Components/Navbar";
 
 const MainArea = () => {
   
