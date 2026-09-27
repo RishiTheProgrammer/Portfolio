@@ -4,7 +4,6 @@ import StaggeredMenu from "./StaggeredMenu.jsx";
 
 
 const CustomNavbar = () => {
-  const navClass = ({ isActive }) => isActive ? "nav-link active" : "nav-link";
 
   return (
     <>
