@@ -260,9 +260,9 @@
 
 .sm-panel-item {
   position: relative;
-  color: #000;
+  color: var(--text);
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 1.95rem;
   cursor: pointer;
   line-height: 1;
   letter-spacing: -2px;
