@@ -56,7 +56,7 @@ const Home = () => {
     }
   ];
   return (
-    <section id="home">
+    <section>
       <div>
         <div className='background'>
           <div className='mobile-bg'></div>
