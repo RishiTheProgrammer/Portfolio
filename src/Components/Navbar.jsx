@@ -7,46 +7,6 @@ const CustomNavbar = () => {
 
   return (
     <>
-    <>
-      {/* Desktop Navbar */}
-      <div className="d-none d-lg-block">
-        <Navbar className="fixed-top rounded-4 m-3" id="navbar">
-          <Container>
-            <Navbar.Brand href="/" className="mt-2">
-              <h2>
-                <i className="bi bi-lightning-charge-fill"></i> RISHI
-              </h2>
-            </Navbar.Brand>
-
-            <Navbar.Collapse>
-              <Nav className="d-flex align-items-center justify-content-evenly gap-lg-3 ms-lg-auto">
-                <NavLink to="/" className={navClass} end>
-                  <i className="bi bi-house-fill me-1"></i> Home
-                </NavLink>
-
-                <NavLink to="/about" className={navClass}>
-                  <i className="bi bi-person-fill me-1"></i> About
-                </NavLink>
-
-                <NavLink to="/skills" className={navClass}>
-                  <i className="bi bi-mortarboard-fill me-1"></i> Skills
-                </NavLink>
-
-                <NavLink to="/projects" className={navClass}>
-                  <i className="bi bi-briefcase-fill me-1"></i> Projects
-                </NavLink>
-
-                <NavLink to="/contact" className={navClass}>
-                  <i className="bi bi-telephone-fill me-1"></i> Contact
-                </NavLink>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </div>
-
-      {/* Mobile Staggered Menu */}
-      <div className="d-lg-none">
         <StaggeredMenu
           position="right"
           items={[
