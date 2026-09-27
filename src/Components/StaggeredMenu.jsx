@@ -6,7 +6,6 @@ import ThemeToggle from './ThemeToggle';
 
 export const StaggeredMenu = ({
   position = 'right',
-  colors = ['#B497CF', '#5227FF'],
   items = [],
   socialItems = [],
   displaySocials = true,
