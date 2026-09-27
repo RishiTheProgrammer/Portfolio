@@ -65,3 +65,7 @@ code, pre{font-family: var(--font-code);}
   pointer-events: none;
   z-index: 9999;
 }
+
+.stat-card.card{
+  background: var(--card);
+}
