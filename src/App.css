@@ -4,6 +4,28 @@
   --font-heading: "Syne", sans-serif;
   --font-body: "Manrope", sans-serif;
   --font-code: "JetBrains Mono", monospace;
+  --chamagne: #f3e8c8;
+  --gold-light: #e6c76a;
+  --gold: #d4af37;
+  --gold-dark: #8a6218;
+}
+
+[data-theme="dark"]{
+  --bg: #0b0b0b;
+  --text: #f4f4f4;
+  --muted: rgba(225, 225, 225, 0.65);
+  --card: #1a1a1a;
+  --border: #fff;
+  --nav: rgba(20, 20, 20, 0.8);
+}
+
+[data-theme="light"]{
+  --bg: #fafafa;
+  --text: #111;
+  --border: #111;
+  --muted: rgba(0, 0, 0, 0.85);
+  --card: #fff;
+  --nav: rgba(225, 225, 225, 0.85);
 }
 
 * {
