@@ -81,8 +81,8 @@ const Home = () => {
           </div>
           {statCard.map((stat) => (
             <Col lg={4} key={stat.id}>
-              <SpotlightCard className='stat-card'>
-                <Card.Header className='d-flex align-items-center justify-content-between px-2 fs-1 mb-2'><span>{stat.icon}</span><span>{stat.title}</span></Card.Header>
+              <SpotlightCard className='card stat-card border-0'>
+                <Card.Header className='d-flex align-items-center justify-content-between fs-1 mb-2 bg-transparent'><span>{stat.icon}</span><span>{stat.title}</span></Card.Header>
                 <Card.Body>
                   <Card.Text className='text-capitalize'>{stat.description}</Card.Text>
                   {stat.features.map((feature, index) => (
