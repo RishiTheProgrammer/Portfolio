@@ -338,3 +338,9 @@
     filter: invert(100%);
   }
 }
+
+@media (max-width: 512px) {
+  .staggered-menu-header{
+    padding: 1rem 1em;
+  }
+}
