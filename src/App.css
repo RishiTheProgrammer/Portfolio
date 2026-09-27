@@ -55,7 +55,7 @@ code, pre{font-family: var(--font-code);}
   height: 15px;
   background: var(--gold);
   border-radius: 50%;
-
+  mix-blend-mode: difference;
   position: fixed;
   top: 0;
   left: 0;
