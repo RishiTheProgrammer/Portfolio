@@ -164,31 +164,12 @@
   left: 0;
 }
 
-.sm-prelayers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: clamp(260px, 38vw, 420px);
-  pointer-events: none;
-  z-index: 5;
-  opacity: 0;
-}
 
 [data-position='left'] .sm-prelayers {
   right: auto;
   left: 0;
 }
 
-.sm-prelayer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transform: translateX(0);
-  opacity: 0;
-}
 
 .sm-panel-inner {
   flex: 1;
