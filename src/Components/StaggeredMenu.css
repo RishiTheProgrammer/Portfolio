@@ -216,11 +216,6 @@
   opacity: 1;
 }
 
-.sm-socials-link:focus-visible {
-  outline: 2px solid var(--sm-accent, #ff0000);
-  outline-offset: 3px;
-}
-
 .sm-socials-list:focus-within .sm-socials-link {
   opacity: 0.35;
 }
