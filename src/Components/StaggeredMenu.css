@@ -279,6 +279,10 @@
   padding-right: 1.4em;
 }
 
+.sm-item-icon, .sm-panel-item .bi{
+  flex-shrink: 0;
+}
+
 .staggered-menu-panel .sm-socials-list .sm-socials-link {
   opacity: 1;
   transition: opacity 0.3s ease;
