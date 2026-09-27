@@ -227,7 +227,7 @@
 .sm-socials-link {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #111;
+  color: var(--text);
   text-decoration: none;
   position: relative;
   padding: 2px 0;
@@ -238,7 +238,7 @@
 }
 
 .sm-socials-link:hover {
-  color: var(--sm-accent, #ff0000);
+  color: var(--text, #ff0000);
 }
 
 .sm-panel-title {
