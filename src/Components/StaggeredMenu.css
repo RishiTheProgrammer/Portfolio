@@ -307,9 +307,6 @@
   transform-origin: 50% 100%;
 }
 
-.sm-panel-item:hover {
-  color: var(--sm-accent, #5227ff);
-}
 
 .sm-panel-list[data-numbering] {
   counter-reset: smItem;
