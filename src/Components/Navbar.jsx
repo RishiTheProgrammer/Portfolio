@@ -28,8 +28,6 @@ const CustomNavbar = () => {
           openMenuButtonColor='currentColor'
           colors={["transparent", "transparent"]}
         />
-      </div>
-    </>
     </>
   );
 };
