@@ -58,7 +58,7 @@
   border-radius: 20rem;
   border: 2px solid var(--border);
   cursor: pointer;
-  color: #e9e9ef;
+  color: var(--text);
   font-weight: 500;
   line-height: 1;
   overflow: visible;
