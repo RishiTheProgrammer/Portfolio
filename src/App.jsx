@@ -1,8 +1,8 @@
 import "./App.css"; 
 import { Container, Row } from "react-bootstrap";
 import MainArea from "./Components/MainArea";
-import { useEffect } from 'react'
-import gsap from 'gsap'
+import { useEffect } from 'react';
+import gsap from 'gsap';
 
 
 const App = () => {
