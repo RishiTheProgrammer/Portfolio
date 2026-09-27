@@ -64,6 +64,14 @@
   overflow: visible;
 }
 
+.theme-toggle{
+  backdrop-filter: blur(12px);
+  border-radius: 50%;
+  border: 0.2px solid var(--border);
+  background: transparent;
+  padding: 7px 12px;
+}
+
 .sm-toggle:focus-visible {
   outline: 2px solid #ffffffaa;
   outline-offset: 4px;
