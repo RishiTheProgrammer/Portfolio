@@ -149,7 +149,6 @@
   border: 1px solid;
   border-color: var(--border) var(--bs-border-opacity);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
   padding: 6em 2em 2em 2em;
