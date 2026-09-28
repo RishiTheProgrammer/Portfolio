@@ -145,7 +145,7 @@
   width: min(360px, 93vw);
   height: 80dvh;
   --bs-border-opacity: 0.5;
-  background: var(--staggered-menu-color);
+  background: transparent;
   border: 1px solid;
   border-color: var(--border) var(--bs-border-opacity);
   backdrop-filter: blur(12px);
