@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/aquire');
 
 :root{
   --font-heading: "Syne", sans-serif;
   --font-body: "Manrope", sans-serif;
   --font-code: "JetBrains Mono", monospace;
+  --font-aquire: "Aquire";
   --chamagne: #f3e8c8;
   --gold-light: #e6c76a;
   --gold: #d4af37;
