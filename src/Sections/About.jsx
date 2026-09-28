@@ -9,7 +9,6 @@ import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AboutAnimation } from "../animations/aboutAnimation.jsx";
-import CustomNavbar from "../Components/Navbar.jsx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
