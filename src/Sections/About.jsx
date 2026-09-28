@@ -46,22 +46,22 @@ const About = () => {
       <section>
         <Container fluid>
           <h1
-            className="text-center text-white mb-5 display-1 fw-bold d-none d-lg-block title"
+            className="text-center mb-5 display-1 fw-bold d-none d-lg-block title"
             style={{ letterSpacing: "2rem" }}
           >
             ABOUT ME
           </h1>
-          <h1 className="text-center text-white mb-3 display-1 fw-bold d-lg-none d-block title">
+          <h1 className="text-center mb-3 display-1 fw-bold d-lg-none d-block title">
             ABOUT ME
           </h1>
           <Row className="d-flex align-items-center justify-content-center">
             <Col md={6} className="text-start ps-xl-5 mt-3 mt-lg-0 hero-left">
               <Card className="bg-transparent border-0">
                 <Card.Body>
-                  <Card.Title className="text-white display-4 fw-semibold">
+                  <Card.Title className="display-4 fw-semibold">
                     Hi, Myself Rishi
                   </Card.Title>
-                  <Card.Text className="text-white mt-3 fs-5 lh-base">
+                  <Card.Text className="mt-3 fs-5 lh-base">
                     I'm an 8th class student and a passionate frontend
                     developer. I love to build functional and beautiful
                     webpages. I always learn new technologies and improve my
@@ -81,7 +81,7 @@ const About = () => {
                           <span className="stat-title fs-3">{stat.title}</span>
                         </Card.Header>
                         <Card.Body>
-                          <Card.Text className="text-white">
+                          <Card.Text>
                             {stat.description}
                           </Card.Text>
                         </Card.Body>
@@ -106,13 +106,13 @@ const About = () => {
                 }}
                 >
                 <Card.Header>
-                  <Card.Title className="d-flex justify-content-between align-items-center text-white px-2">
+                  <Card.Title className="d-flex justify-content-between align-items-center px-2">
                     <span style={{ letterSpacing: "5px" }}>•••</span>
                     <span>About.jsx</span>
                   </Card.Title>
                 </Card.Header>
                 <Card.Body
-                  className="text-white text-monospace"
+                  className="text-monospace"
                   style={{ fontSize: "1.2rem" }}
                   >
                   <pre>
