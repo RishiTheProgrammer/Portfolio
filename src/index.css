@@ -1,0 +1,26 @@
+*{
+    transition: color 0.5s ease, background-color 0.5s ease, border 0.5s ease;
+}
+
+html{
+    scrollbar-color: auto;
+    scrollbar-width: auto;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1a1a1a;
+    border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--gold);
+    border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--gold-light);
+}
