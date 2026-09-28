@@ -19,7 +19,6 @@ import { TbCircleLetterTFilled } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { SiVite } from "react-icons/si";
 import SkillCard from '../Components/SkillCard.jsx';
-import CustomNavbar from "../Components/Navbar.jsx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
