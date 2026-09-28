@@ -43,7 +43,7 @@ const About = () => {
     AboutAnimation();
   }, []);
   return (
-      <section id="about">
+      <section>
         <Container fluid>
             <CustomNavbar/>
           <h1
