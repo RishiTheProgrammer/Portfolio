@@ -39,6 +39,15 @@
   font-family: 'Italianno';
 }
 
+.hero-content .cta-btn{
+  border: 1px solid var(--border);
+}
+
+.hero-content .cta-row .cta-btn:nth-child(1){
+  background: var(--text);
+  color: var(--bg);
+}
+
 .stat-features {
   margin-left: 1.2rem;
   margin-bottom: 0.5rem;
