@@ -18,7 +18,6 @@
   --border: #fff;
   --nav: rgba(20, 20, 20, 0.8);
   --spotlight-color-hover: rgba(225, 225, 225, 0.25);
-  --staggered-menu-color: rgba(20, 20, 20, 0.45);
 }
 
 [data-theme="light"]{
@@ -29,7 +28,6 @@
   --card: #fff;
   --nav: rgba(225, 225, 225, 0.85);
   --spotlight-color-hover: rgba(30, 30, 30, 0.25);
-  --staggered-menu-color: rgba(225, 225, 225, 0.45);
 }
 
 * {
