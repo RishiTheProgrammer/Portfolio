@@ -45,7 +45,6 @@ const About = () => {
   return (
       <section>
         <Container fluid>
-            <CustomNavbar/>
           <h1
             className="text-center text-white mb-5 display-1 fw-bold d-none d-lg-block title"
             style={{ letterSpacing: "2rem" }}
