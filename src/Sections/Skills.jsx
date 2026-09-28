@@ -25,8 +25,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const Skills = () => {
   useGSAP(() => {}, []);
   return (
-    <section id="skills">
-        <CustomNavbar/>
+    <section>
         <Container fluid>
             <h1 className="text-center display-5 fw-semibold mt-5 d-flex gap-2">Skills <span className='d-none d-lg-block'> That Power My Work</span></h1>
           <Row className='mt-5 g-4'>
