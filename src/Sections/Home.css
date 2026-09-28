@@ -14,6 +14,10 @@
     overflow: hidden;
 }
 
+#home #hero{
+  border-bottom: 0.2rem solid var(--border);
+}
+
 .hero-content{
     z-index: 2;
     position: relative;
