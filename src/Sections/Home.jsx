@@ -36,7 +36,7 @@ const Home = () => {
       id: 2,
       icon: <FaJs/>,
       title: "JavaScript",
-      description: "Making triggers, functions and eventListners to make website dynamic, controllable and functional.",
+      description: "Making triggers, functions and event listners to make website dynamic, controllable and functional.",
       features: [
       "Interactive UI",
       "Event-driven interactions",
@@ -76,8 +76,8 @@ const Home = () => {
         </Row>
         <Row className="align-items-center justify-content-evenly min-vh-100 g-3 px-3 mt-5 mt-sm-0 py-lg-5" id="wib">
           <div className="">
-            <h1 className="text-center font-italianno display-1" ref={heroTitleRef}>What I Build ?</h1>
-            <h3 className="text-center display-4 lh-base" ref={heroSubTitleRef}>Interfaces That Feels <span className="px-2 alive">Alive</span> With</h3>
+            <h1 className="text-center font-italianno display-1" ref={heroTitleRef}>What I Build?</h1>
+            <h3 className="text-center display-4 lh-base" ref={heroSubTitleRef}>Interfaces That Feel <span className="px-2 alive">Alive</span> With</h3>
           </div>
           {statCard.map((stat) => (
             <Col lg={4} key={stat.id}>

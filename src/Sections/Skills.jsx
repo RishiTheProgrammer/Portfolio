@@ -33,7 +33,7 @@ const Skills = () => {
             <SkillCard icon={<RiReactjsFill size={50} color="#4dd8eb"/>} title="React" level="Intermediate" text="Building interactive user interfaces with React." iconClassName="bg-primary-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
             <SkillCard icon={<SiJavascript size={58} color="#f0db4f" className='rounded-3'/>} title="JavaScript" level="Intermediate" text="Creating functional and dynamic web experiences." xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
             <SkillCard icon={<IoLogoHtml5 size={50} color="#fd7e14"/>} title="HTML5" level="Advanced" text="Structuring content for web page in the right way." iconClassName="bg-warning-subtle rounded-3 p-2" xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
-            <SkillCard icon={<BsBootstrapFill size={58} color="#5337a3" className='rounded-3'/>} title="Bootstrap" level="Advanced" text="Develpoing layouts and responsives with Bootstrap." xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
+            <SkillCard icon={<BsBootstrapFill size={58} color="#5337a3" className='rounded-3'/>} title="Bootstrap" level="Advanced" text="developing layouts and responsives with Bootstrap." xs={12} sm={6} xl={3} CardClassName='mt-5 mt-xl-0'/>
           </Row>
           <Row className='mt-5 g-4'>
             <h3 className="text-danger mb-4"><FaWandSparkles/> Animation</h3>
