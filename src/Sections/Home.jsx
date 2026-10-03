@@ -8,8 +8,21 @@ import homeAnimation from "../animations/homeAnimation.jsx";
 import { Link } from "react-scroll";
 import { useRef } from "react";
 import SpotlightCard from "../Components/SpotlightCard";
-import { FaJs, FaReact } from "react-icons/fa6";
-import { SiGsap } from "react-icons/si"
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaGitAlt,
+  FaGithub,
+  FaReact,
+  FaJs
+} from "react-icons/fa6";
+
+import {
+  SiJavascript,
+  SiGsap,
+  SiVite,
+} from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
