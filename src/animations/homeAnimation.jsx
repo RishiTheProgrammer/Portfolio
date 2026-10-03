@@ -7,7 +7,6 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const IntroTimeline = ({heroTitleRef, heroSubTitleRef}) => {
   // const tl = gsap.timeline();
   const statCards = document.querySelectorAll(".stat-card");
-  const stackCard = document.querySelectorAll(".stack-card");
       gsap.from(heroTitleRef.current, {
         y: 20,
         opacity: 0,
