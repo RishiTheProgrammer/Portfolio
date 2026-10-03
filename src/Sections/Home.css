@@ -50,6 +50,10 @@
 }
 
 .hero-content .cta-row .cta-btn:hover{
+  transform: translateY(-5px);
+}
+
+.hero-content .cta-row .cta-btn:nth-child(2):hover{
   border: 1px solid var(--border);
 }
 
