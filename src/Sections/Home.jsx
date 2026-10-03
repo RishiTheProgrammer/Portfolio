@@ -48,7 +48,7 @@ const Home = () => {
       id: 2,
       icon: <FaJs/>,
       title: "JavaScript",
-      description: "Making triggers, functions and event listners to make website dynamic, controllable and functional.",
+      description: "Making triggers, functions and event listeners to make website dynamic, controllable and functional.",
       features: [
       "Interactive UI",
       "Event-driven interactions",
