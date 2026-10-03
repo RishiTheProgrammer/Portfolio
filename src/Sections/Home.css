@@ -41,6 +41,7 @@
 
 .hero-content .cta-btn{
   border: 1px solid var(--border);
+  transition: 0.3s ease all;
 }
 
 .hero-content .cta-row .cta-btn:nth-child(1){
