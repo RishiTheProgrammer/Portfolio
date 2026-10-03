@@ -144,18 +144,87 @@ const Home = () => {
                 <Card.Header className='d-flex align-items-center justify-content-between fs-1 mb-2 bg-transparent'><span>{stat.icon}</span><span>{stat.title}</span></Card.Header>
                 <Card.Body>
                   <Card.Text className='text-capitalize'>{stat.description}</Card.Text>
-                  {stat.features.map((feature, index) => (
-                    <li key={index} className='stat-features'>{feature}</li>
-                  ))}
+                  <ul className="stack-feature-list">
+                    {stat.features.map((feature, index) => (
+                      <li key={index} className='stat-features'>{feature}</li>
+                    ))}
+                  </ul>
                 </Card.Body>
               </SpotlightCard>
             </Col>
           ))}
         </Row>
-        <Row className="min-vh-100 g-3 px-3 mt-5 mt-sm-0" id="stack">
-          
-          
-        </Row>
+        <Row
+  className="stack-section min-vh-100 align-items-center g-0 mt-5 mt-sm-0"
+  id="stack"
+>
+  <Col xs={12}>
+    <div className="stack-heading px-3">
+      <p className="stack-kicker">THE TOOLKIT</p>
+
+      <h2 className="stack-title">
+        Built with <span>code.</span>
+        <br />
+        Brought alive with <span>motion.</span>
+      </h2>
+    </div>
+
+    <div className="marquee-wrapper">
+      <div className="marquee marquee-one">
+        <div className="marquee-track">
+          <span>React</span>
+          <i>✦</i>
+          <span>JavaScript</span>
+          <i>✦</i>
+          <span>GSAP</span>
+          <i>✦</i>
+          <span>CSS</span>
+          <i>✦</i>
+          <span>React</span>
+          <i>✦</i>
+          <span>JavaScript</span>
+          <i>✦</i>
+          <span>GSAP</span>
+          <i>✦</i>
+          <span>CSS</span>
+          <i>✦</i>
+        </div>
+      </div>
+
+      <div className="marquee marquee-two">
+        <div className="marquee-track">
+          <span>HTML</span>
+          <i>✦</i>
+          <span>Bootstrap</span>
+          <i>✦</i>
+          <span>Git</span>
+          <i>✦</i>
+          <span>Vite</span>
+          <i>✦</i>
+          <span>GitHub</span>
+          <i>✦</i>
+          <span>HTML</span>
+          <i>✦</i>
+          <span>Bootstrap</span>
+          <i>✦</i>
+          <span>Git</span>
+          <i>✦</i>
+          <span>Vite</span>
+          <i>✦</i>
+          <span>GitHub</span>
+          <i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <div className="stack-footer px-3">
+      <p>
+        I don't just use tools.
+        <span> I experiment with them.</span>
+      </p>
+    </div>
+  </Col>
+</Row>
       </div>
     </section>
   );
