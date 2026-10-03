@@ -4,7 +4,6 @@ import "@gsap/react";
 import { Row, Col, Card } from "react-bootstrap";
 import { useGSAP } from "@gsap/react";
 import "./Home.css";
-// import hero from "../assets/HeroIMG.png"
 import homeAnimation from "../animations/homeAnimation.jsx";
 import { Link } from "react-scroll";
 import { useRef } from "react";
