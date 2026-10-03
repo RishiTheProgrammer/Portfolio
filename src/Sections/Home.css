@@ -48,6 +48,10 @@
   color: var(--bg);
 }
 
+.hero-content .cta-row .cta-btn:hover{
+  border: 1px solid var(--border);
+}
+
 .stat-features {
   margin-left: 1.2rem;
   margin-bottom: 0.5rem;
