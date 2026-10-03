@@ -67,6 +67,53 @@ const Home = () => {
       ],
     }
   ];
+  const stack = [
+  {
+    id: 1,
+    name: "React",
+    icon: <FaReact />,
+  },
+  {
+    id: 2,
+    name: "JavaScript",
+    icon: <SiJavascript />,
+  },
+  {
+    id: 3,
+    name: "HTML",
+    icon: <FaHtml5 />,
+  },
+  {
+    id: 4,
+    name: "CSS",
+    icon: <FaCss3Alt />,
+  },
+  {
+    id: 5,
+    name: "Bootstrap",
+    icon: <FaBootstrap />,
+  },
+  {
+    id: 6,
+    name: "GSAP",
+    icon: <SiGsap />,
+  },
+  {
+    id: 7,
+    name: "Git",
+    icon: <FaGitAlt />,
+  },
+  {
+    id: 8,
+    name: "GitHub",
+    icon: <FaGithub />,
+  },
+  {
+    id: 9,
+    name: "Vite",
+    icon: <SiVite />,
+  },
+];
   return (
     <section>
       <div>
