@@ -17,9 +17,10 @@ const CustomNavbar = () => {
             { label: "Contact", link: "contact", icon: "bi-telephone-fill"}
           ]} 
           socialItems={[
-            {label: "GitHub", link: "https://github.com/RishiTheProgrammer/"},
-            {label: "Instagram", link: "https://www.instagram.com/theproone_345/"},
-            {label: "Portfolio", link: "https://rishitheprogrammer.vercel.app"}
+            {label: "GitHub", icon: "bi-github", link: "https://github.com/RishiTheProgrammer/"},
+            {label: "Instagram", icon: "bi-instagram", link: "https://www.instagram.com/theproone_345/"},
+            {label: "X", icon: "bi-twitter-x", link: "https://www.instagram.com/theproone_345/"},
+            {label: "Portfolio", icon: "bi-globe2", link: "https://rishitheprogrammer.vercel.app"}
           ]}
           changeMenuColorOnOpen={false}
           isFixed={true}
