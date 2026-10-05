@@ -240,7 +240,8 @@
 }
 
 .sm-socials-link:hover {
-  color: var(--text, #ff0000);
+  color: var(--text);
+  transform: translateY(-2px);
 }
 
 .sm-panel-title {
