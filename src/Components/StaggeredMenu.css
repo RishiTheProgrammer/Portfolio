@@ -231,6 +231,8 @@
   position: relative;
   padding: 2px 0;
   display: inline-block;
+  align-items: center;
+  justify-content: center;
   transition:
     color 0.3s ease,
     opacity 0.3s ease;
