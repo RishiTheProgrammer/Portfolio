@@ -4,139 +4,176 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@gsap/react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { useGSAP } from "@gsap/react";
-import { SiGsap } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { SiGsap, SiJavascript } from "react-icons/si";
+import { FaReact, FaGithub } from "react-icons/fa";
 import { AboutAnimation } from "../animations/aboutAnimation.jsx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const About = () => {
   const code = `01 const Rishi = {
-02      role: "Frontend Dev",
-03      focus: "UI + Motion",
-04      stack: [
-05         "React",
-06         "JavaScript",
-07         "GSAP",
-08         "HTML",
-09         "CSS",
-10         "Bootstrap"
-11     ]
-12 };`;
-  const stats = [
+02   role: "Frontend Developer",
+03   focus: "UI + Motion",
+04   mindset: "Build. Learn. Improve.",
+05   currently: "Next.js",
+06   goal: "Better with every build"
+07 };`;
+
+  const highlights = [
     {
-      title: "React",
-      icon: <FaReact />,
-      description: "I use this to make components based websites.",
       id: 1,
+      number: "01",
+      title: "I build",
+      text: "Interactive interfaces with React, JavaScript and thoughtful UI decisions.",
     },
     {
-      title: "JavaScript",
-      icon: <SiJavascript />,
-      description: "I use this to create functions, events and triggers.",
       id: 2,
+      number: "02",
+      title: "I animate",
+      text: "I use motion to give interfaces personality instead of adding animation just for decoration.",
+    },
+    {
+      id: 3,
+      number: "03",
+      title: "I learn",
+      text: "Every project is an excuse to experiment, solve problems and level up.",
     },
   ];
+
   useGSAP(() => {
     AboutAnimation();
   }, []);
+
   return (
-      <section>
-        <Container fluid>
+    <section className="about-section">
+      <Container fluid>
+        <div className="about-heading">
+          <p className="about-kicker">01 / THE DEVELOPER</p>
+
           <h1
-            className="text-center mb-5 display-1 fw-bold d-none d-lg-block title"
-            style={{ letterSpacing: "2rem" }}
+            className="text-center fw-bold title about-title d-none d-lg-block"
+            style={{ letterSpacing: "1.5rem" }}
           >
             ABOUT ME
           </h1>
-          <h1 className="text-center mb-3 display-1 fw-bold d-lg-none d-block title">
+
+          <h1 className="text-center fw-bold title about-title d-lg-none d-block">
             ABOUT ME
           </h1>
-          <Row className="d-flex align-items-center justify-content-center">
-            <Col md={6} className="text-start ps-xl-5 mt-3 mt-lg-0 hero-left">
-              <Card className="bg-transparent border-0">
-                <Card.Body>
-                  <Card.Title className="display-4 fw-semibold">
-                    Hi, Myself Rishi
-                  </Card.Title>
-                  <Card.Text className="mt-3 fs-5 lh-base">
-                    I'm an 8th class student and a passionate frontend
-                    developer. I love to build functional and beautiful
-                    webpages. I always learn new technologies and improve my
-                    past skills.
-                  </Card.Text>
-                </Card.Body>
-                <Row className='d-none d-lg-flex stat-row'>
-                  {stats.map((stat) => (
-                    <Col
-                      md={6}
-                      key={stat.id}
-                      className="mt-3 mt-lg-0 stat-card"
-                    >
-                      <Card className="border-0">
-                        <Card.Header className="d-flex align-items-center justify-content-between">
-                          <span className="stat-icon fs-2">{stat.icon}</span>
-                          <span className="stat-title fs-3">{stat.title}</span>
-                        </Card.Header>
-                        <Card.Body>
-                          <Card.Text>
-                            {stat.description}
-                          </Card.Text>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
-              </Card>
-            </Col>
-            <Col
-              md={6}
-              className="d-flex justify-content-center align-items-center mt-3 mt-lg-0 hero-right"
-            >
-                <div className="editor-wrapper position-relative" style={{width: "min(100%, 400px)"}}>
 
-              <Card
-                className="border-0 mx-auto"
-                style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.05)",
-                    width: "max-content",
-                  backdropFilter: "blur(10px)",
-                }}
-                >
-                <Card.Header>
-                  <Card.Title className="d-flex justify-content-between align-items-center px-2">
-                    <span style={{ letterSpacing: "5px" }}>•••</span>
-                    <span>About.jsx</span>
-                  </Card.Title>
+          <p className="about-heading-line">
+            A student developer obsessed with making the web feel alive.
+          </p>
+        </div>
+
+        <Row className="align-items-center justify-content-center g-5 about-main">
+          <Col lg={6} className="hero-left">
+            <div className="about-copy">
+              <p className="about-eyebrow">HEY, I'M RISHI.</p>
+
+              <h2>
+                I build interfaces that
+                <span> feel alive.</span>
+              </h2>
+
+              <p className="about-description">
+                I'm a student and frontend developer who enjoys turning ideas
+                into functional, polished web experiences. I care about the
+                little things: clean structure, responsive layouts, useful
+                interactions and motion that actually adds character.
+              </p>
+
+              <p className="about-description muted">
+                I'm constantly learning and experimenting. Right now, my
+                journey is moving toward Next.js, then Python and deeper
+                full-stack development.
+              </p>
+
+              <div className="about-tags" aria-label="Development focus">
+                <span>Frontend</span>
+                <span>UI + Motion</span>
+                <span>Always Learning</span>
+              </div>
+            </div>
+
+            <Row className="about-highlights g-3 mt-4">
+              {highlights.map((item) => (
+                <Col md={4} key={item.id}>
+                  <Card className="about-highlight h-100">
+                    <Card.Body>
+                      <span className="highlight-number">
+                        {item.number}
+                      </span>
+
+                      <h3>{item.title}</h3>
+
+                      <p>{item.text}</p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </Col>
+
+          <Col
+            lg={6}
+            className="d-flex justify-content-center align-items-center hero-right"
+          >
+            <div className="editor-wrapper position-relative">
+              <Card className="about-editor border-0">
+                <Card.Header className="about-editor-header">
+                  <span className="editor-dots">•••</span>
+
+                  <span>About.jsx</span>
+
+                  <span className="editor-status">●</span>
                 </Card.Header>
-                <Card.Body
-                  className="text-monospace"
-                  style={{ fontSize: "1.2rem" }}
-                  >
+
+                <Card.Body className="about-editor-body">
                   <pre>
                     <code>{code}</code>
                   </pre>
                 </Card.Body>
+
+                <Card.Footer className="about-editor-footer">
+                  <span>main</span>
+                  <span>UTF-8</span>
+                  <span>React</span>
+                </Card.Footer>
               </Card>
-              <div className="float-element float-react d-none d-sm-flex">
+
+              <div
+                className="float-element float-react"
+                aria-hidden="true"
+              >
                 <FaReact />
               </div>
-              <div className="float-element float-js d-none d-sm-flex">
+
+              <div
+                className="float-element float-js"
+                aria-hidden="true"
+              >
                 <SiJavascript />
               </div>
-              <div className="float-element float-gsap d-none d-sm-flex">
+
+              <div
+                className="float-element float-gsap"
+                aria-hidden="true"
+              >
                 <SiGsap />
               </div>
-              <div className="float-element float-github d-none d-sm-flex">
+
+              <div
+                className="float-element float-github"
+                aria-hidden="true"
+              >
                 <FaGithub />
               </div>
-                    </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 
