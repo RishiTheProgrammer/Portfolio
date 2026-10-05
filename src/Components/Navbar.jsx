@@ -19,7 +19,7 @@ const CustomNavbar = () => {
           socialItems={[
             {label: "GitHub", icon: "bi-github", link: "https://github.com/RishiTheProgrammer/"},
             {label: "Instagram", icon: "bi-instagram", link: "https://www.instagram.com/theproone_345/"},
-            {label: "X", icon: "bi-twitter-x", link: "https://www.instagram.com/theproone_345/"},
+            {label: "X", icon: "bi-twitter-x", link: "https://x.com/RishiSajnamm/"},
             {label: "Portfolio", icon: "bi-globe2", link: "https://rishitheprogrammer.vercel.app"}
           ]}
           changeMenuColorOnOpen={false}
