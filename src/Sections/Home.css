@@ -313,3 +313,13 @@
     animation: none;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-content .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .hero-subtitle {
+    font-size: 2rem;
+  }
+}
