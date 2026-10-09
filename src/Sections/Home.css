@@ -40,6 +40,12 @@
     word-spacing: 1rem;
     margin-top: 1rem;
 }
+
+.hero-content .hero-stack{
+  gap: 0.25rem 0.5rem;
+  flex-wrap: wrap;
+  font-family: var(--font-aquire);
+}
  
 .font-italianno{
   font-family: 'Italianno';
