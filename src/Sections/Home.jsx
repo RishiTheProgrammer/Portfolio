@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@gsap/react";
+import hero from '../assets/HeroIMG.png';
 import { Row, Col, Card } from "react-bootstrap";
 import { useGSAP } from "@gsap/react";
 import "./Home.css";
