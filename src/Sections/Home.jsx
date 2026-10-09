@@ -23,8 +23,9 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const Home = () => {
   const heroTitleRef = useRef();
   const heroSubTitleRef = useRef();
+  const saturnRef = useRef();
   useGSAP(() => {
-    homeAnimation({ heroTitleRef, heroSubTitleRef, });
+    homeAnimation({ heroTitleRef, heroSubTitleRef, saturnRef });
   });
   const statCard = [
     {
